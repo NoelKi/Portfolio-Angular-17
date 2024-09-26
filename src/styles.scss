@@ -16,6 +16,25 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "robotoMono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/Handjet,Roboto_Mono/Roboto_Mono/RobotoMono-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "robotoMono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./assets/fonts/Handjet,Roboto_Mono/Roboto_Mono/RobotoMono-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+
 $color-orange: #e15544;
 $color-turquoise: #02f4bf;
 
@@ -27,29 +46,30 @@ $color-turquoise: #02f4bf;
 
 body {
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
   background-color: black;
 }
 
+h1,h2,h3,h4{
+  color: $color-turquoise;
+}
+
 h1 {
-  font-size: 82px;
+  font-size: 40px;
   margin: 0;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 32px;
   margin: 0;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 26px;
   margin: 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 button {
@@ -57,8 +77,8 @@ button {
 }
 
 .main-container {
-  max-width: 1440px;
-  width: 100%;
+  // max-width: 1440px;
+  width: 100vw;
   margin: 0 auto;
   background: linear-gradient(
     174.25deg,
@@ -80,3 +100,12 @@ button {
 .turquoise-border {
   border: 1px solid $color-turquoise;
 }
+
+.orange{
+  color: $color-orange;
+}
+
+.turquoise {
+  color: turquoise;
+}
+

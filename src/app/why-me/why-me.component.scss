@@ -1,7 +1,56 @@
 @import "./../../styles.scss";
 @import "./../../_mixins.scss";
 
-.why-me {
-  width: 1440px;
-  height: 452px;
+h2{
+  color: $color-orange;
+}
+
+p {
+  color: $color-turquoise;
+  font-weight: 400;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5vh;
+  >div {
+    @include dFlex();
+    flex-direction: column;
+  }
+}
+
+p {
+  text-align: center;
+  padding: 5vw;
+}
+
+button {
+  background-color: $color-turquoise;
+  color: black;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 140px;
+  position: absolute;
+}
+
+div {
+  >div {
+    @include dFlex($fd: row);
+    >p {
+      margin-left: -6px;
+    }
+  }
+}
+
+.arrow-one {
+  rotate: 270deg;
+}
+
+.arrow-two {
+  position: absolute;
+  right: 5vw;
+  rotate: 310deg;
 }
