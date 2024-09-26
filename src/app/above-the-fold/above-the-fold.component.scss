@@ -1,0 +1,66 @@
+@import "./../../styles.scss";
+
+h1,
+h2 {
+  color: $color-turquoise;
+}
+
+.arrow {
+  width: 22px;
+  position: absolute;
+  top: 50vh;
+  left: 722px;
+}
+
+.above-the-fold {
+  height: 100vh;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-me-btn {
+  background-color: transparent;
+  border: 1px solid $color-turquoise;
+  padding: 10px 20px;
+  color: $color-orange;
+  font-size: 16px;
+  width: 164px;
+  height: 50px;
+  position: absolute;
+  top: 50vh;
+  left: 20px;
+  rotate: 270deg;
+  &:hover {
+    color: $color-turquoise;
+  }
+}
+
+.name-container {
+  padding-left: 80px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 92vh;
+  padding-bottom: 8vh;
+  width: 1440px;
+}
+
+.portrait {
+  margin-right: 80px;
+}
+
+@media (max-width: 1440px) {
+  .above-the-fold {
+    width: 100vw;
+  }
+
+  .hero-container {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,73 @@
+@import "./../../../../_mixins.scss";
+@import "./../../../../styles.scss";
+
+header {
+  height: 92px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include dFlex();
+}
+
+.header-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 4, 45, 1) 80%,
+    rgba(11, 4, 45, 0.5) 100%
+  );
+  width: 1440px;
+  height: 92px;
+  @include dFlex($jc: space-between);
+}
+
+.header-left {
+  @include dFlex();
+  padding-left: 80px;
+  color: $color-orange;
+  > a {
+    text-decoration: none;
+    color: $color-orange;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 20px;
+    &:hover {
+      color: $color-turquoise;
+    }
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: $color-orange;
+  &:hover {
+    color: $color-turquoise;
+  }
+}
+
+p {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.btn-container {
+  padding-right: 80px;
+  color: $color-orange;
+  @include dFlex();
+}
+
+@media (max-width: 1440px) {
+  .header-container {
+    width: 100vw;
+  }
+}

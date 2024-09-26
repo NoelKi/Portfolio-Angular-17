@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "handjet";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/Handjet,Roboto_Mono/Handjet/Handjet-VariableFont_ELGR,ELSH,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "robotoMono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./assets/fonts/Handjet,Roboto_Mono/Roboto_Mono/RobotoMono-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+$color-orange: #e15544;
+$color-turquoise: #02f4bf;
+
+* {
+  margin: 0;
+  // box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+h1 {
+  font-size: 82px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 54px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  font-size: 18px;
+}
+
+.main-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(
+    174.25deg,
+    #0b042d 24.9%,
+    #1f0b80 39.2%,
+    #0b042f 72.02%,
+    #241085 106.54%
+  );
+}
+
+.font-handjet {
+  font-family: "handjet", monospace;
+}
+
+.font-robotomono {
+  font-family: "robotoMono", monospace;
+}
+
+.turquoise-border {
+  border: 1px solid $color-turquoise;
+}
