@@ -34,9 +34,9 @@
     format("truetype");
 }
 
-
 $color-orange: #e15544;
 $color-turquoise: #02f4bf;
+$color-grey: grey;
 
 * {
   margin: 0;
@@ -49,7 +49,10 @@ body {
   background-color: black;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   color: $color-turquoise;
 }
 
@@ -95,17 +98,17 @@ button {
 
 .font-robotomono {
   font-family: "robotoMono", monospace;
+  font-weight: 400;
 }
 
 .turquoise-border {
   border: 1px solid $color-turquoise;
 }
 
-.orange{
+.orange {
   color: $color-orange;
 }
 
 .turquoise {
   color: turquoise;
 }
-

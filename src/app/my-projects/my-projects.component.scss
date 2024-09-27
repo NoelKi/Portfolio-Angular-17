@@ -1,0 +1,8 @@
+@import "./../../styles.scss";
+@import "./../../_mixins.scss";
+
+section {
+    @include dFlex($fd: column);
+    padding-bottom: 100px;
+}
+

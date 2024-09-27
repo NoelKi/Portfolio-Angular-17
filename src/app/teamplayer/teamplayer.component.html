@@ -1,0 +1,11 @@
+<section>
+    <h3 class="font-robotomono orange">Need a teamplayer ?</h3>
+    <h4 class="font-robotomono orange">Here what my colleagues said about me</h4>
+    <div>
+        @for (evaluation of evaluations; track $index) {
+            <app-teamplayer-macro [evaluation]="evaluation"></app-teamplayer-macro>
+        }
+    </div>
+</section>
+
+<app-contact-me></app-contact-me>

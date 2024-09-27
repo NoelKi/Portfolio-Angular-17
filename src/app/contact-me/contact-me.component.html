@@ -1,0 +1,34 @@
+<section>
+    <h3 class="font-robotomono orange">Contact Me</h3>
+    <p class="font-robotomono turquoise">Still not sure if I am the right person for your project? Contact me so I can
+        reassure you.
+        Let us work together.</p>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <input class="font-robotomono turquoise" type="text" formControlName="name" placeholder="Your Name" required>
+        <input class="font-robotomono turquoise" type="email" formControlName="email" placeholder="Your Email" required>
+        <textarea class="font-robotomono turquoise" id="message-input" formControlName="message"
+            placeholder="Your Message" required></textarea>
+
+        <div class="checkbox-container" (click)="togglePrivacyPolicy()">
+            <img [src]="contactForm.get('privacyPolicy')?.value ? './assets/img/icons/full-box-icon.svg' : 'assets/img/icons/empty-box-icon.svg'"
+                alt="Checkbox" class="checkbox-icon">
+            <p class="font-robotomono turquoise policy">I've read the <a class="orange" href="#">privacy policy</a> and
+                agree to <br> the processing of my data as outlined.</p>
+            <div *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('privacyPolicy')?.touched">
+                <small>You must agree to the privacy policy.</small>
+            </div>
+        </div>
+        <button class="font-robotomono turquoise" [disabled]="contactForm.invalid">Send</button>
+    </form>
+    <img class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()">
+    <div>
+        <img [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
+        <h4 class="font-robotomono">kieran.noel&#64;icloud.com</h4>
+    </div>
+    <div>
+        <img [src]="'assets/img/icons/phone-default-icon.svg'" alt="letter">
+        <h4 class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
+    </div>
+</section>
+
+<app-footer></app-footer>

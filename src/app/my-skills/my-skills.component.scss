@@ -4,7 +4,7 @@
 
 section {
     width: 100vw;
-    height: 120vh;
+    padding-bottom: 200px;
     @include dFlex($fd: column); 
     gap: 32px;
     >div {

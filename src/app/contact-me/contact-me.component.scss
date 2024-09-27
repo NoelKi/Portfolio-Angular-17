@@ -1,0 +1,71 @@
+@import "./../../styles.scss";
+@import "./../../_mixins.scss";
+
+section {
+  text-align: center;
+  @include dFlex($fd: column, $g: 20px);
+}
+
+form {
+  @include dFlex($fd: column, $g: 10px);
+}
+
+input {
+  width: 80vw;
+  background-color: transparent;
+  border: 1px solid $color-turquoise;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  &::placeholder {
+    color: $color-turquoise;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid $color-turquoise;
+  &:disabled {
+    color: $color-grey;
+    border-color: $color-grey;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#message-input {
+  border: 1px solid $color-turquoise;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px;
+  padding-bottom: 100px;
+  resize: vertical;
+  width: 80vw;
+  &::placeholder {
+    color: $color-turquoise;
+  }
+}
+
+.policy {
+  font-size: 12px;
+}
+
+.checkbox-container {
+  @include dFlex($g: 8px);
+}
+
+.arrow-up {
+  position: relative;
+  padding-left: 70vw;
+}
