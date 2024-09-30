@@ -38,10 +38,12 @@ $color-orange: #e15544;
 $color-turquoise: #02f4bf;
 $color-grey: grey;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
-  // box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {

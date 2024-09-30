@@ -1,18 +1,19 @@
 <header>
     <h2 class="font-handjet">&lt;KM&gt;</h2>
     <nav class="font-robotomono" [class.active]="menuOpen">
-        <img src="./assets/img/icons/close-menu-icon.svg" alt="close">
+        <img [src]="xIconSource" (mouseover)="xHover()" (mouseleave)="xDefault()" (click)="toggleMenu()" alt="close">
         <ul>
-            <li><a routerLink="whyMe">Why me</a></li>
-            <li><a routerLink="skills">Skills</a></li>
-            <li><a routerLink="projects">Projects</a></li>
-            <li><a routerLink="contact">Contact</a></li>
+            <li><a href="#whyMe" (click)="toggleMenu()">Why me</a></li>
+            <li><a href="#skills" (click)="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
             <li>
-                <button class="language-media">DE</button> | <button class="language-media">EN</button>
+                <button class="language-media font-robotomono">DE</button> | <button
+                    class="font-robotomono language-media">EN</button>
             </li>
         </ul>
     </nav>
-    <img src="./assets/img/icons/burger-default-icon.svg" (click)="toggleMenu()">
+    <img [src]="burgerIconSource" (mouseover)="burgerHover()" (mouseleave)="burgerDefault()" (click)="toggleMenu()">
     <!-- 
         <div class="header-left">
             @for (link of ['Why me','Skills','Projects','Contacts']; track $index) {

@@ -10,15 +10,14 @@
             placeholder="Your Message" required></textarea>
 
         <div class="checkbox-container" (click)="togglePrivacyPolicy()">
-            <img [src]="contactForm.get('privacyPolicy')?.value ? './assets/img/icons/full-box-icon.svg' : 'assets/img/icons/empty-box-icon.svg'"
-                alt="Checkbox" class="checkbox-icon">
+            <img [src]="policyIconSource" alt="Checkbox" class="checkbox-icon">
             <p class="font-robotomono turquoise policy">I've read the <a class="orange" href="#">privacy policy</a> and
                 agree to <br> the processing of my data as outlined.</p>
-            <div *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('privacyPolicy')?.touched">
+            <div *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('submitBtn')?.touched">
                 <small>You must agree to the privacy policy.</small>
             </div>
         </div>
-        <button class="font-robotomono turquoise" [disabled]="contactForm.invalid">Send</button>
+        <button id="submitBtn" class="font-robotomono turquoise" [disabled]="contactForm.invalid">Send</button>
     </form>
     <img class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()">
     <div>
@@ -30,5 +29,3 @@
         <h4 class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
     </div>
 </section>
-
-<app-footer></app-footer>

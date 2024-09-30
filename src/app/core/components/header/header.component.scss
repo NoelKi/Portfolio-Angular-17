@@ -67,6 +67,8 @@ nav {
 }
 
 a {
+  text-decoration: none;
+  color: $color-orange;
   &:hover {
     color: $color-turquoise;
   }

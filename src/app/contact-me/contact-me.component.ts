@@ -7,17 +7,17 @@ import {
   Validators,
 } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
-import { FooterComponent } from '../core/components/footer/footer.component';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FooterComponent],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
   arrowUpIcon = './assets/img/arrows/arrow-up-default.svg';
+  policyIconSource = './assets/img/icons/empty-box-icon.svg'; // Default Icon
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
@@ -26,6 +26,11 @@ export class ContactMeComponent {
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(10)]],
       privacyPolicy: [false, [Validators.requiredTrue]],
+    });
+
+    // Subscribe to form value changes to update icon dynamically
+    this.contactForm.valueChanges.subscribe(() => {
+      this.setPolicyIconSource();
     });
   }
 
@@ -60,6 +65,19 @@ export class ContactMeComponent {
   togglePrivacyPolicy() {
     const currentValue = this.contactForm.get('privacyPolicy')?.value;
     this.contactForm.get('privacyPolicy')?.setValue(!currentValue);
+  }
+
+  setPolicyIconSource() {
+    const privacyPolicyAccepted = this.contactForm.get('privacyPolicy')?.value;
+    const formValid = this.contactForm.valid;
+
+    if (privacyPolicyAccepted && formValid) {
+      this.policyIconSource = './assets/img/icons/full-box-icon.svg'; // Full box icon
+    } else if (privacyPolicyAccepted) {
+      this.policyIconSource = './assets/img/icons/half-box-icon.svg'; // Half box icon
+    } else {
+      this.policyIconSource = './assets/img/icons/empty-box-icon.svg'; // Empty box icon
+    }
   }
 
   onMouseOver(): void {

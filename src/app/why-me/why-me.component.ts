@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { MySkillsComponent } from "../my-skills/my-skills.component";
 
 @Component({
   selector: 'app-why-me',
   standalone: true,
-  imports: [MySkillsComponent],
+  imports: [],
   templateUrl: './why-me.component.html',
-  styleUrl: './why-me.component.scss'
+  styleUrl: './why-me.component.scss',
 })
 export class WhyMeComponent {
   locationIcon = './assets/img/icons/location-default-icon.svg';
   suitcaseIcon = './assets/img/icons/suitcase-default-icon.svg';
   computerIcon = './assets/img/icons/computer-default-icon.svg';
-  
+
   onMouseOver(icon: string): void {
     switch (icon) {
       case 'location':
