@@ -47,6 +47,8 @@ $color-grey: grey;
 body {
   margin: 0;
   background-color: black;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 h1,
