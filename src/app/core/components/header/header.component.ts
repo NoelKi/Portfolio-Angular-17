@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { HeaderOverlayComponent } from '../header-overlay/header-overlay.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [HeaderOverlayComponent],
+  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  menuOpen = true;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    console.log('toggle ' + this.menuOpen);
+  }
 }

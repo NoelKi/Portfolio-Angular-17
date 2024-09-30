@@ -1,7 +1,19 @@
 <header>
     <h2 class="font-handjet">&lt;KM&gt;</h2>
-    <img src="./assets/img/icons/burger-default-icon.svg">
-<!-- 
+    <nav class="font-robotomono" [class.active]="menuOpen">
+        <img src="./assets/img/icons/close-menu-icon.svg" alt="close">
+        <ul>
+            <li><a routerLink="whyMe">Why me</a></li>
+            <li><a routerLink="skills">Skills</a></li>
+            <li><a routerLink="projects">Projects</a></li>
+            <li><a routerLink="contact">Contact</a></li>
+            <li>
+                <button class="language-media">DE</button> | <button class="language-media">EN</button>
+            </li>
+        </ul>
+    </nav>
+    <img src="./assets/img/icons/burger-default-icon.svg" (click)="toggleMenu()">
+    <!-- 
         <div class="header-left">
             @for (link of ['Why me','Skills','Projects','Contacts']; track $index) {
             <a class="font-robotomono no-wrap" href="#{{ link }}">{{ link }}</a>
