@@ -46,6 +46,7 @@
 $color-orange: #e15544;
 $color-turquoise: #02f4bf;
 $color-grey: grey;
+$media-bp: 800px;
 
 html {
   scroll-behavior: smooth;
@@ -128,4 +129,18 @@ button {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+@media (min-width: $media-bp) {
+  h1 {
+    font-size: 82px;
+  }
+
+  h2 {
+    font-size: 54px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
 }

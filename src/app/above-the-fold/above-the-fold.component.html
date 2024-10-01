@@ -1,13 +1,17 @@
 <section class="above-the-fold">
 
-    <img class="portrait" src="./../assets/img/protraits/self.svg" alt="portrait">
-    <div class="name-container">
-        <h2 class="font-robotomono">FRONTEND DEVELOPER</h2>
-        <h1 class="font-robotomono">Kieran Noel Mai</h1>
+    <div class="hero-container">
+        <img class="portrait" src="./../assets/img/protraits/self.svg" alt="portrait">
+        <div class="name-container">
+            <button class="font-robotomono">CONTACT ME</button>
+            <h2 class="font-robotomono">FRONTEND DEVELOPER</h2>
+            <h1 class="font-robotomono">Kieran Noel Mai</h1>
+        </div>
+        <a href="#Why%20me">
+            <img class="arrow" (mouseover)="arrowHover()" (mouseleave)="arrowDefault()" [src]="arrowIconSource">
+        </a>
     </div>
 
-    <!-- <button class="contact-me-btn font-robotomono">CONTACT ME</button>
-    <img class="arrow" src="./../../assets/img/arrows/arrow-down-default.svg">
-    <div class="hero-container">
+    <!-- <div class="hero-container">
     </div> -->
 </section>

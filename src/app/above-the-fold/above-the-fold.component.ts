@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './above-the-fold.component.scss',
 })
 export class AboveTheFoldComponent {
-  arrowDownIcon = './assets/img/arrows/arrow-down-default.svg';
+  arrowIconSource = './assets/img/arrows/arrow-down-default.svg';
 
-  onMouseOver(): void {
-    this.arrowDownIcon = './assets/img/arrows/arrow-down-hover.svg';
+  arrowHover(): void {
+    this.arrowIconSource = './assets/img/arrows/arrow-down-hover.svg';
   }
 
-  onMouseOut(): void {
-    this.arrowDownIcon = './assets/img/arrows/arrow-down-default.svg';
+  arrowDefault(): void {
+    this.arrowIconSource = './assets/img/arrows/arrow-down-default.svg';
   }
 }
