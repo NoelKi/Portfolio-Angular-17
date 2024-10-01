@@ -27,14 +27,21 @@ button {
   font-size: 16px;
   padding: 10px 20px;
   margin-top: 50px;
+  &:hover {
+    color: $color-orange;
+  }
 }
 
 .wrap {
-  max-width: 1440px;
+  width: 1440px;
+  @include dFlex();
 }
 
 .top-container {
   @include dFlex($fd: column);
+  > p {
+    max-width: 670px;
+  }
 }
 
 .icons-container {
@@ -158,7 +165,7 @@ button {
     font-size: 48px;
     padding: 0;
     margin-bottom: 135px;
-    margin-right: 600px;
+    margin-right: 450px;
     position: absolute;
   }
 
@@ -169,7 +176,7 @@ button {
   .icons-container {
     @include dFlex($ai: flex-end, $fd: column);
     width: 729px;
-    height: 206px;
+    height: 215px;
     padding-left: 100px;
     > div {
       > p {
@@ -182,6 +189,7 @@ button {
     @include dFlex($jc: flex-end);
     > button {
       margin: 0;
+      margin-top: 10px;
     }
   }
 
@@ -215,5 +223,15 @@ button {
 
   .arrow-five {
     display: block;
+  }
+}
+
+@media (max-width: 1440px) {
+  .portrait {
+    display: none;
+  }
+
+  .help-container {
+    margin-right: 460px;
   }
 }
