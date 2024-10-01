@@ -8,21 +8,15 @@ h2 {
 p {
   color: $color-turquoise;
   font-weight: 400;
+  text-align: center;
+  padding: 25px;
 }
 
 section {
   width: 100vw;
-  padding-bottom: 180px;
+  padding-bottom: 280px;
   padding-top: 5vh;
-  > div {
-    @include dFlex();
-    flex-direction: column;
-  }
-}
-
-p {
-  text-align: center;
-  padding: 5vw;
+  @include dFlex();
 }
 
 button {
@@ -32,25 +26,194 @@ button {
   font-weight: 400;
   font-size: 16px;
   padding: 10px 20px;
-  margin-top: 140px;
-  position: absolute;
+  margin-top: 50px;
 }
 
-div {
-  > div {
-    @include dFlex($fd: row);
-    > p {
-      margin-left: -6px;
-    }
+.wrap {
+  max-width: 1440px;
+}
+
+.top-container {
+  @include dFlex($fd: column);
+}
+
+.icons-container {
+  @include dFlex($fd: column);
+}
+
+.button-container {
+  @include dFlex($fd: column);
+}
+
+.media {
+  display: block;
+}
+
+.default {
+  display: none;
+  text-align: left;
+}
+
+.mini-container {
+  @include dFlex($fd: row);
+  > p {
+    margin-left: -6px;
   }
+}
+
+.iam {
+  padding-top: 70px;
 }
 
 .arrow-one {
   rotate: 270deg;
+  position: absolute;
+  left: 18vw;
+  padding-top: 20px;
+  display: block;
 }
 
 .arrow-two {
   position: absolute;
-  right: 5vw;
+  right: 14vw;
   rotate: 310deg;
+  display: block;
+}
+
+.help-container {
+  position: absolute;
+}
+
+.arrow-three {
+  display: none;
+  rotate: 270deg;
+  position: relative;
+  padding-right: 80px;
+  padding-top: 560px;
+}
+
+.arrow-four {
+  display: none;
+  position: relative;
+  rotate: 270deg;
+  padding-right: 270px;
+  padding-top: 1160px;
+}
+
+.arrow-five {
+  display: none;
+  position: relative;
+  rotate: 160deg;
+  padding-right: 740px;
+  padding-bottom: 460px;
+}
+
+.portrait {
+  display: none;
+  width: 452px;
+}
+
+@media (min-width: 500px) {
+  .arrow-one {
+    left: 25vw;
+  }
+
+  .arrow-two {
+    right: 26vw;
+  }
+}
+
+@media (min-width: $media-bp) {
+  .arrow-one {
+    left: 28vw;
+    display: block;
+  }
+
+  .arrow-two {
+    right: 32vw;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    @include dFlex($jc: center);
+    max-width: 1440px;
+  }
+
+  .portrait {
+    display: block;
+  }
+
+  .top-container {
+    > p {
+      text-align: right;
+      padding-right: 0;
+      width: 670px;
+    }
+    @include dFlex($fd: column, $ai: flex-end);
+  }
+
+  .iam {
+    font-size: 48px;
+    padding: 0;
+    margin-bottom: 135px;
+    margin-right: 600px;
+    position: absolute;
+  }
+
+  .why-me-container {
+    max-width: 1440px;
+  }
+
+  .icons-container {
+    @include dFlex($ai: flex-end, $fd: column);
+    width: 729px;
+    height: 206px;
+    padding-left: 100px;
+    > div {
+      > p {
+        padding: 10px;
+      }
+    }
+  }
+
+  .button-container {
+    @include dFlex($jc: flex-end);
+    > button {
+      margin: 0;
+    }
+  }
+
+  .right-margin {
+    margin-right: 200px;
+  }
+
+  .media {
+    display: none;
+  }
+
+  .default {
+    display: block;
+  }
+
+  .arrow-one {
+    display: none;
+  }
+
+  .arrow-two {
+    display: none;
+  }
+
+  .arrow-three {
+    display: block;
+  }
+
+  .arrow-four {
+    display: block;
+  }
+
+  .arrow-five {
+    display: block;
+  }
 }
