@@ -1,31 +1,28 @@
 <header>
     <h2 class="font-handjet">&lt;KM&gt;</h2>
+    <div class="header-left">
+        @for (link of ['Why me','Skills','Projects','Contact']; track $index) {
+        <a class="font-robotomono no-wrap" href="#{{ link }}">{{ link }}</a>
+        }
+    </div>#
     <nav class="font-robotomono" [class.active]="menuOpen">
         <img [src]="xIconSource" (mouseover)="xHover()" (mouseleave)="xDefault()" (click)="toggleMenu()" alt="close">
         <ul>
-            <li><a href="#whyMe" (click)="toggleMenu()">Why me</a></li>
-            <li><a href="#skills" (click)="toggleMenu()">Skills</a></li>
-            <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+            @for (link of ['Why me','Skills','Projects','Contact']; track $index) {
+            <li><a href="#{{ link }}" (click)="toggleMenu()">{{ link }}</a></li>
+            }
             <li>
                 <button class="language-media font-robotomono">DE</button> | <button
                     class="font-robotomono language-media">EN</button>
             </li>
         </ul>
     </nav>
-    <img [src]="burgerIconSource" (mouseover)="burgerHover()" (mouseleave)="burgerDefault()" (click)="toggleMenu()">
-    <!-- 
-        <div class="header-left">
-            @for (link of ['Why me','Skills','Projects','Contacts']; track $index) {
-            <a class="font-robotomono no-wrap" href="#{{ link }}">{{ link }}</a>
-            } 
-        </div>
-        <div class="btn-container">
-            <button class="font-robotomono">DE</button>
-            <p>|</p>
-            <button class="font-robotomono">EN</button>
-            <button><img src="./../../../../assets/img/icons/burger-default-icon.svg"></button>
-        </div>
- -->
+    <img id="burger-menu" [src]="burgerIconSource" (mouseover)="burgerHover()" (mouseleave)="burgerDefault()"
+        (click)="toggleMenu()">
 
+    <div class="language-container">
+        <button class="font-robotomono">DE</button>
+        <p>|</p>
+        <button class="font-robotomono">EN</button>
+    </div>
 </header>

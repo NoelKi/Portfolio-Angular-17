@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { flatMap } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   burgerIconSource = './assets/img/icons/burger-default-icon.svg';
   xIconSource = './assets/img/icons/close-menu-icon.svg';
-  menuOpen = true;
+  menuOpen = false;
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
