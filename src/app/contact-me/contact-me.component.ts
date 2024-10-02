@@ -1,82 +1,92 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss',
+  styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
+  acceptedPolicy = false;
   arrowUpIcon = './assets/img/arrows/arrow-up-default.svg';
   policyIconSource = './assets/img/icons/empty-box-icon.svg'; // Default Icon
-  contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.minLength(10)]],
-      privacyPolicy: [false, [Validators.requiredTrue]],
-    });
+  http = inject(HttpClient);
 
-    // Subscribe to form value changes to update icon dynamically
-    this.contactForm.valueChanges.subscribe(() => {
-      this.setPolicyIconSource();
-    });
-  }
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+  };
 
-  onSubmit() {
-    if (this.contactForm.valid) {
-      const templateParams = {
-        name: this.contactForm.get('name')?.value,
-        email: this.contactForm.get('email')?.value,
-        message: this.contactForm.get('message')?.value,
-      };
+  mailTest = true;
 
-      emailjs
-        .send(
-          'service_bkw92o5',
-          'template_67p5fl5',
-          templateParams,
-          'pGqch9yFVNAmuHBZ-'
-        )
-        .then(
-          (response: EmailJSResponseStatus) => {
-            console.log('SUCCESS!', response.status, response.text);
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  constructor() {}
+
+  onSubmit(ngForm: NgForm) {
+    if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      !this.mailTest &&
+      this.acceptedPolicy
+    ) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+            this.acceptedPolicy = false;
+            this.setPolicyIconSource(); // Icon wieder zurücksetzen
           },
-          (error) => {
-            console.log('FAILED...', error);
-          }
-        );
-    } else {
-      console.log('Form is not valid');
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
+      this.acceptedPolicy = false;
+      this.setPolicyIconSource(); // Icon wieder zurücksetzen
     }
   }
 
-  togglePrivacyPolicy() {
-    const currentValue = this.contactForm.get('privacyPolicy')?.value;
-    this.contactForm.get('privacyPolicy')?.setValue(!currentValue);
+  togglePolicy() {
+    this.acceptedPolicy = !this.acceptedPolicy;
+    this.setPolicyIconSource(); // Aktualisiere das Icon basierend auf dem neuen Zustand
   }
 
   setPolicyIconSource() {
-    const privacyPolicyAccepted = this.contactForm.get('privacyPolicy')?.value;
-    const formValid = this.contactForm.valid;
-
-    if (privacyPolicyAccepted && formValid) {
-      this.policyIconSource = './assets/img/icons/full-box-icon.svg'; // Full box icon
-    } else if (privacyPolicyAccepted) {
-      this.policyIconSource = './assets/img/icons/half-box-icon.svg'; // Half box icon
-    } else {
-      this.policyIconSource = './assets/img/icons/empty-box-icon.svg'; // Empty box icon
+    if (!this.acceptedPolicy) {
+      this.policyIconSource = './assets/img/icons/empty-box-icon.svg';
+    } else if (
+      this.acceptedPolicy &&
+      (!this.contactData.name ||
+        !this.contactData.email ||
+        !this.contactData.message)
+    ) {
+      this.policyIconSource = './assets/img/icons/half-box-icon.svg';
+    } else if (
+      this.acceptedPolicy &&
+      this.contactData.name &&
+      this.contactData.email &&
+      this.contactData.message
+    ) {
+      this.policyIconSource = './assets/img/icons/full-box-icon.svg';
     }
   }
 

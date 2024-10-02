@@ -10,7 +10,7 @@ form {
   @include dFlex($fd: column, $g: 10px);
 }
 
-a {
+.arrow {
   @include dFlex();
   width: 50px;
   height: 70px;
@@ -18,7 +18,8 @@ a {
   padding-left: 70vw;
 }
 
-input {
+input[type="text"],
+input[type="email"] {
   width: 80vw;
   background-color: transparent;
   border: 1px solid $color-turquoise;
@@ -28,13 +29,24 @@ input {
   &::placeholder {
     color: $color-turquoise;
   }
+  &.placeholder-error::placeholder {
+    color: #f92103;
+    font-size: 16px;
+  }
 }
 
-button {
+input[type="submit"] {
   padding: 10px 20px;
   font-size: 16px;
   background-color: transparent;
   border: 1px solid $color-turquoise;
+  &:hover {
+    color: $color-turquoise;
+  }
+  &:active {
+    border-color: $color-orange;
+    color: $color-orange;
+  }
   &:disabled {
     color: $color-grey;
     border-color: $color-grey;
@@ -52,7 +64,7 @@ p {
   margin: 0;
 }
 
-#message-input {
+textarea {
   border: 1px solid $color-turquoise;
   background-color: transparent;
   font-size: 16px;
@@ -62,6 +74,10 @@ p {
   width: 80vw;
   &::placeholder {
     color: $color-turquoise;
+  }
+  &.placeholder-error::placeholder {
+    color: #f92103;
+    font-size: 16px;
   }
 }
 

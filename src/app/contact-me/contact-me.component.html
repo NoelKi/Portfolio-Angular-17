@@ -3,23 +3,36 @@
     <p class="font-robotomono turquoise">Still not sure if I am the right person for your project? Contact me so I can
         reassure you.
         Let us work together.</p>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <input class="font-robotomono turquoise" type="text" formControlName="name" placeholder="Your Name" required>
-        <input class="font-robotomono turquoise" type="email" formControlName="email" placeholder="Your Email" required>
-        <textarea class="font-robotomono turquoise" id="message-input" formControlName="message"
-            placeholder="Your Message" required></textarea>
 
-        <div class="checkbox-container" (click)="togglePrivacyPolicy()">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input [(ngModel)]="contactData.name" #name="ngModel" class="font-robotomono turquoise" type="text" name="name"
+            id="text" required [ngClass]="{ 'placeholder-error': name.invalid && name.touched }"
+            [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
+            (ngModelChange)="setPolicyIconSource()">
+
+        <input [(ngModel)]="contactData.email" #email="ngModel" class="font-robotomono turquoise" type="email"
+            name="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            [ngClass]="{ 'placeholder-error': email.invalid && email.touched }"
+            [placeholder]="email.invalid && email.touched ? 'Your Email is required' : 'Your Email'"
+            (ngModelChange)="setPolicyIconSource()">
+
+        <textarea [(ngModel)]="contactData.message" #message="ngModel" class="font-robotomono turquoise" name="message"
+            id="message-input" required minlength="4"
+            [ngClass]="{ 'placeholder-error': message.invalid && message.touched }"
+            [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'"
+            (ngModelChange)="setPolicyIconSource()"></textarea>
+
+        <div class="checkbox-container" (click)="togglePolicy()">
             <img [src]="policyIconSource" alt="Checkbox" class="checkbox-icon">
-            <p class="font-robotomono turquoise policy">I've read the <a class="orange" href="#">privacy policy</a> and
-                agree to <br> the processing of my data as outlined.</p>
-            <div *ngIf="contactForm.get('privacyPolicy')?.invalid && contactForm.get('submitBtn')?.touched">
-                <small>You must agree to the privacy policy.</small>
-            </div>
+            <p class="font-robotomono turquoise policy">
+                I've read the <a class="orange" href="#">privacy policy</a> and agree to
+                the processing of my data as outlined.
+            </p>
         </div>
-        <button id="submitBtn" class="font-robotomono turquoise" [disabled]="contactForm.invalid">Send</button>
+        <input class="font-robotomono orange" type="submit" value="Send"
+            [disabled]="contactForm.invalid || !acceptedPolicy">
     </form>
-    <a href="#above-the-fold">
+    <a class="arrow" href="#above-the-fold">
         <img class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()">
     </a>
     <div>
@@ -27,7 +40,7 @@
         <h4 class="font-robotomono">kieran.noel&#64;icloud.com</h4>
     </div>
     <div>
-        <img [src]="'assets/img/icons/phone-default-icon.svg'" alt="letter">
+        <img [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
         <h4 class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
     </div>
 </section>

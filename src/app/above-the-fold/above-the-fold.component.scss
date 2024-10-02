@@ -30,7 +30,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  // position: relative;
+  margin-bottom: 10px;
 }
 
 button {
@@ -61,7 +61,8 @@ button {
 
 .portrait {
   max-width: 90vw;
-  height: 50vh;
+  aspect-ratio: 1.05/1;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $media-bp) {
@@ -71,7 +72,7 @@ button {
 
   .portrait {
     max-width: 554px;
-    height: 554px;
+    // height: 554px;
   }
 
   .hero-container {
@@ -107,9 +108,13 @@ button {
 }
 
 @media (min-width: 1440px) {
-  // .above-the-fold {
-  //   width: 100vw;
-  // }
+  .hero-container {
+    width: 1440px;
+    justify-content: space-between;
+    padding-left: 78px;
+    padding-right: 78px;
+    margin: 0px 200px;
+  }
 
   h2 {
     font-size: 54px;
@@ -117,5 +122,11 @@ button {
 
   h1 {
     font-size: 82px;
+  }
+
+  .wrap {
+    padding-left: 78px;
+    padding-right: 78px;
+    width: 1284px;
   }
 }
