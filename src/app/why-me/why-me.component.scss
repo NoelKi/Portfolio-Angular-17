@@ -9,10 +9,10 @@ p {
   color: $color-turquoise;
   font-weight: 400;
   text-align: center;
-  padding: 25px;
+  padding-left: 25px;
 }
 
-section {
+.section {
   width: 100vw;
   padding-bottom: 280px;
   @include dFlex();
@@ -25,7 +25,6 @@ button {
   font-weight: 400;
   font-size: 16px;
   padding: 10px 20px;
-  margin-top: 50px;
   &:hover {
     color: $color-orange;
   }
@@ -33,30 +32,81 @@ button {
 
 .wrap {
   width: 1440px;
+  padding: 0px 78px;
+  @include dFlex($jc: space-between);
+}
+
+.first-container {
+  width: 568px;
+  height: 60px;
+  @include dFlex($jc: flex-start, $g: 58px);
+}
+
+.secound-container {
+  width: 568px;
+  height: 60px;
+  @include dFlex($jc: flex-end, $g: 150px);
+  right: 80px;
+  position: relative;
+}
+
+.third-container {
+  width: 568px;
+  height: 60px;
+  @include dFlex($jc: space-between);
+}
+
+.inner-third-container {
   @include dFlex();
+  padding-left: 168px;
 }
 
-.top-container {
-  @include dFlex($fd: column);
-  > p {
-    max-width: 670px;
-  }
+.arrow-one {
+  rotate: 270deg;
 }
 
-.icons-container {
-  @include dFlex($fd: column);
+.arrow-two {
+  padding-left: 15px;
+  rotate: 0deg;
 }
 
-.button-container {
-  @include dFlex($fd: column);
+.arrow-three {
+  rotate: 270deg;
+}
+
+.arrow-four {
+  rotate: 270deg;
+  display: none;
+}
+
+.arrow-five {
+  display: none;
+}
+
+.mobile-arrow-four {
+  @include dFlex($jc: flex-start);
+  height: 80px;
+  width: 80vw;
+}
+
+.mobile-arrow-five {
+  @include dFlex($jc: flex-end);
+  height: 60px;
+  width: 80vw;
+}
+
+.icons {
+  @include dFlex();
+  width: 40px;
+  height: 60px;
 }
 
 .media {
-  display: block;
+  display: none;
 }
 
 .default {
-  display: none;
+  display: block;
   text-align: left;
 }
 
@@ -68,169 +118,108 @@ button {
 }
 
 .iam {
-  padding-top: 70px;
-}
-
-.arrow-one {
-  rotate: 270deg;
-  position: absolute;
-  left: 18vw;
-  padding-top: 20px;
-  display: block;
-}
-
-.arrow-two {
-  position: absolute;
-  right: 14vw;
-  rotate: 310deg;
-  display: block;
-}
-
-.help-container {
-  position: absolute;
-}
-
-.arrow-three {
-  display: none;
-  rotate: 270deg;
-  position: relative;
-  padding-right: 80px;
-  padding-top: 560px;
-}
-
-.arrow-four {
-  display: none;
-  position: relative;
-  rotate: 270deg;
-  padding-right: 270px;
-  padding-top: 1160px;
-}
-
-.arrow-five {
-  display: none;
-  position: relative;
-  rotate: 160deg;
-  padding-right: 740px;
-  padding-bottom: 460px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .portrait {
-  display: none;
   width: 452px;
 }
 
-@media (min-width: 500px) {
-  .arrow-one {
-    left: 25vw;
-  }
+.why-me-container {
+  @include dFlex($fd: column, $ai: flex-end, $jc: space-between);
+  height: 452px;
+  width: 700px;
+}
 
-  .arrow-two {
-    right: 26vw;
+.top-container {
+  @include dFlex($ai: flex-end, $fd: column);
+  width: 660px;
+  > p {
+    text-align: right;
   }
 }
 
-@media (min-width: $media-bp) {
-  .arrow-one {
-    left: 28vw;
-    display: block;
-  }
-
-  .arrow-two {
-    right: 32vw;
-    display: block;
-  }
-}
-
-@media (min-width: 1200px) {
-  .wrap {
-    @include dFlex($jc: space-between);
-    max-width: 1440px;
-  }
-
+@media (max-width: 1270px) {
   .portrait {
-    display: block;
+    display: none;
   }
 
-  .top-container {
-    > p {
-      text-align: right;
-      padding-right: 0;
-      width: 670px;
-    }
-    @include dFlex($fd: column, $ai: flex-end);
+  .wrap {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    width: 100vw;
+    padding: 0;
   }
 
   .iam {
-    font-size: 48px;
-    padding: 0;
-    margin-bottom: 135px;
-    margin-right: 450px;
-    position: absolute;
+    font-size: 18px;
+  }
+
+  .first-container {
+    width: 60vw;
+    flex-direction: column;
+    gap: 0;
+    height: 80px;
+    padding-top: 10px;
+  }
+
+  .secound-container {
+    width: 60vw;
+    justify-content: center;
+    left: 0;
+    // padding: 20px;
+  }
+
+  .third-container {
+    width: 60vw;
+    justify-content: center;
+    > div {
+      padding: 0;
+    }
+  }
+
+  .top-container {
+    width: 80vw;
+    align-items: center;
+    > p {
+      text-align: center;
+    }
+    > h2 {
+      // font-size: 32px;
+      padding-bottom: 20px;
+    }
   }
 
   .why-me-container {
-    max-width: 1440px;
+    align-items: center;
+    height: max-content;
   }
 
-  .icons-container {
-    @include dFlex($ai: flex-end, $fd: column);
-    width: 729px;
-    height: 215px;
-    padding-left: 100px;
-    > div {
-      > p {
-        padding: 10px;
-      }
-    }
-  }
-
-  .button-container {
-    @include dFlex($jc: flex-end);
-    > button {
-      margin: 0;
-      margin-top: 10px;
-    }
-  }
-
-  .right-margin {
-    margin-right: 200px;
-  }
-
-  .media {
-    display: none;
-  }
-
-  .default {
-    display: block;
-  }
-
-  .arrow-one {
-    display: none;
-  }
-
-  .arrow-two {
-    display: none;
-  }
-
+  .arrow-one,
+  .arrow-two,
   .arrow-three {
-    display: block;
+    display: none;
   }
 
-  .arrow-four {
-    display: block;
-  }
-
+  .arrow-four,
   .arrow-five {
     display: block;
   }
-}
 
-@media (max-width: 1440px) {
-  .portrait {
+  .media {
+    display: block;
+  }
+
+  .default {
     display: none;
   }
+}
 
-  .help-container {
-    margin-right: 460px;
-  }
+@media (max-width: 300px) {
 }

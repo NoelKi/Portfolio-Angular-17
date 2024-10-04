@@ -1,4 +1,4 @@
-<section>
+<div class="section">
   <div class="wrap">
     <img class="portrait" src="./../assets/img/portraits/self-full-2.jpg" alt="protraits">
     <div class="why-me-container">
@@ -10,44 +10,53 @@
           solve complex problems and my passion for programming make me a valuable member of your team.
         </p>
       </div>
-      <img class="arrow-one" src="./assets/img/arrows/arrow-1.svg" alt="arrow">
+      <div class="mobile-arrow-four">
+        <img class="arrow-four" src="./assets/img/arrows/arrow-1.svg" alt="arrow">
+      </div>
       <div class="icons-container">
-        <p class="iam font-robotomono orange">I am</p>
-
-        <div class="mini-container right-margin" (mouseover)="onMouseOver('location')"
-          (mouseout)="onMouseOut('location')">
-          <img [src]="locationIcon" alt="location">
-          <p class="font-robotomono media">located in Berlin</p>
-          <p class="font-robotomono default">located <br> in Berlin</p>
+        <div class="first-container">
+          <p class="iam font-robotomono orange">I am</p>
+          <div class="mini-container right-margin" (mouseover)="onMouseOver('location')"
+            (mouseout)="onMouseOut('location')">
+            <div class="icons">
+              <img [src]="locationIcon" alt="location">
+            </div>
+            <p class="font-robotomono media">located in Berlin</p>
+            <p class="font-robotomono default">located <br> in Berlin</p>
+          </div>
         </div>
+        <div class="secound-container">
+          <img class="arrow-one" src="./assets/img/arrows/arrow-1.svg" alt="arrow">
 
-        <div class="mini-container" (mouseover)="onMouseOver('suitcase')" (mouseout)="onMouseOut('suitcase')">
-          <img [src]="suitcaseIcon" alt="suitcase">
-          <p class="font-robotomono media">open to relocate</p>
-          <p class="font-robotomono default">open to<br> relocate</p>
+          <div class="mini-container" (mouseover)="onMouseOver('suitcase')" (mouseout)="onMouseOut('suitcase')">
+            <div class="icons">
+              <img [src]="suitcaseIcon" alt="suitcase">
+            </div>
+            <p class="font-robotomono media">open to relocate</p>
+            <p class="font-robotomono default">open to<br> relocate</p>
+          </div>
         </div>
+        <div class="third-container">
+          <div class="inner-third-container">
+            <div class="mini-container right-margin" (mouseover)="onMouseOver('computer')"
+              (mouseout)="onMouseOut('computer')">
+              <div class="icons">
+                <img [src]="computerIcon" alt="computer">
+              </div>
+              <p class="font-robotomono media">open to work remote</p>
+              <p class="font-robotomono default">open to <br> work remote</p>
+            </div>
+            <img class="arrow-two" src="./assets/img/arrows/arrow-2.svg" alt="arrow">
+          </div>
+          <img class="arrow-three" src="./assets/img/arrows/arrow-3.svg" alt="arrow">
 
-        <div class="mini-container right-margin" (mouseover)="onMouseOver('computer')"
-          (mouseout)="onMouseOut('computer')">
-          <img [src]="computerIcon" alt="computer">
-          <p class="font-robotomono media">open to work remote</p>
-          <p class="font-robotomono default">open to <br> work remote</p>
         </div>
       </div>
-      <img class="arrow-two" src="./assets/img/arrows/arrow-2.svg" alt="arrow">
-
+      <div class="mobile-arrow-five">
+        <img class="arrow-five" src="./assets/img/arrows/arrow-5.svg" alt="arrow">
+      </div>
       <div class="button-container">
         <button class="font-robotomono">Let's talk</button>
       </div>
     </div>
-    <div class="help-container">
-      <img class="arrow-three" src="./assets/img/arrows/arrow-1.svg" alt="arrow">
-    </div>
-    <div class="help-container">
-      <img class="arrow-four" src="./assets/img/arrows/arrow-3.svg" alt="arrow">
-    </div>
-    <div class="help-container">
-      <img class="arrow-five" src="./assets/img/arrows/arrow-2.svg" alt="arrow">
-    </div>
   </div>
-</section>
