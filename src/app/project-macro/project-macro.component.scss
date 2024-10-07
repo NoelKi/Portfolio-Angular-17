@@ -1,37 +1,74 @@
-@import './../../styles.scss';
-@import './../../mixins';
+@import "./../../styles.scss";
+@import "./../../mixins";
 
 div {
-    @include dFlex($fd: column,$g: 20px);
-    >p {
-        text-align: center;
+  > div {
+    @include dFlex($fd: column, $g: 20px);
+    > p {
+      text-align: center;
     }
-    >div {
-        @include dFlex($g: 20px)
+    > div {
+      @include dFlex($g: 20px);
     }
     padding: 0 5vw;
+  }
 }
 
 h3 {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
-a{
-    text-decoration: none;
-    padding: 10px 20px;
+a {
+  text-decoration: none;
+  padding: 10px 20px;
 }
-
 
 .github {
-    color: $color-orange;
-    border: 1px solid $color-turquoise;
+  color: $color-orange;
+  border: 1px solid $color-turquoise;
 }
 
 .sitelink {
-    color: black;
-    background-color: $color-turquoise;
+  color: black;
+  background-color: $color-turquoise;
 }
 
 img {
-    width: 80vw;
+  width: 80vw;
 }
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    width: 588px;
+  }
+
+  div {
+    @include dFlex($fd: row, $jc: space-between);
+    > div {
+      align-items: flex-start;
+      > p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// // Stile für jedes zweite Kind-`div`
+// &:nth-child(2n) {
+//     // Hier kannst du andere Attribute hinzufügen
+//     background-color: lightgray; // Beispielattribut
+//     // Weitere Attribute hier
+//   }
