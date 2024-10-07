@@ -6,6 +6,7 @@ import { MyProjectsComponent } from '../my-projects/my-projects.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
 import { FooterComponent } from '../core/components/footer/footer.component';
 import { TeamplayerComponent } from '../teamplayer/teamplayer.component';
+import { HeaderComponent } from '../core/components/header/header.component';
 
 @Component({
   selector: 'app-main-page',
@@ -18,6 +19,7 @@ import { TeamplayerComponent } from '../teamplayer/teamplayer.component';
     ContactMeComponent,
     FooterComponent,
     TeamplayerComponent,
+    HeaderComponent,
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',

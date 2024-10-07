@@ -48,6 +48,18 @@ section {
     color: $color-turquoise;
     display: none;
     font-size: 18px;
+    text-align: center;
+  }
+}
+
+#questionmark-container {
+  display: flex;
+  flex-direction: row;
+  > p {
+    color: $color-turquoise;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
   }
 }
 
@@ -56,8 +68,25 @@ section {
     > div {
       align-items: flex-start;
       > div {
-        width: 1440px;
+        width: 80vw;
+        justify-content: center;
       }
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  #questionmark-container {
+    > img {
+      max-width: 60px;
+    }
+    flex-direction: column;
+    align-items: center;
+    > p {
+      text-align: center;
+      padding: 0;
     }
   }
 

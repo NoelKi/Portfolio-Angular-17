@@ -5,6 +5,7 @@ import { HeaderComponent } from './core/components/header/header.component';
 import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     AboveTheFoldComponent,
     WhyMeComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -58,9 +58,15 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
   overscroll-behavior-y: none;
   overflow-x: hidden;
+  background: linear-gradient(
+    174.25deg,
+    #0b042d 24.9%,
+    #1f0b80 39.2%,
+    #0b042f 72.02%,
+    #241085 106.54%
+  );
 }
 
 h1,
@@ -92,18 +98,6 @@ p {
 
 button {
   font-size: 18px;
-}
-
-.main-container {
-  width: 100vw;
-  margin: 0 auto;
-  background: linear-gradient(
-    174.25deg,
-    #0b042d 24.9%,
-    #1f0b80 39.2%,
-    #0b042f 72.02%,
-    #241085 106.54%
-  );
 }
 
 .font-handjet {

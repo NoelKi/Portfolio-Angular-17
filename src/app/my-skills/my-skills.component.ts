@@ -17,9 +17,7 @@ export class MySkillsComponent {
     'html',
     'firebase',
     'github',
-    'materialdesign',
     'scrum',
-    'questionmark',
   ];
 
   capitalizeFirstLetter(skill: string): string {
