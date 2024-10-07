@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ProjectMacroComponent } from '../project-macro/project-macro.component';
 import { TeamplayerComponent } from '../teamplayer/teamplayer.component';
 
@@ -31,4 +31,3 @@ export class MyProjectsComponent {
     },
   ];
 }
-// p

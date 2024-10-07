@@ -2,6 +2,11 @@
 @import "./../../_mixins.scss";
 
 section {
+  width: 100vw;
   @include dFlex($fd: column);
   padding-bottom: 80px;
+}
+
+h2 {
+  padding-bottom: 30px;
 }
