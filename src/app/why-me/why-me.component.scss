@@ -9,7 +9,7 @@ p {
   color: $color-turquoise;
   font-weight: 400;
   text-align: center;
-  padding-left: 25px;
+  // padding-left: 25px;
 }
 
 .section {
@@ -113,7 +113,7 @@ button {
 .mini-container {
   @include dFlex($fd: row);
   > p {
-    margin-left: -6px;
+    padding-left: 10px;
   }
 }
 
@@ -220,7 +220,4 @@ button {
   .default {
     display: none;
   }
-}
-
-@media (max-width: 300px) {
 }

@@ -5,7 +5,7 @@
             @for (skill of skills; track $index) {
             <div class="icon-container">
                 <img src="./assets/img/icons/{{ skill }}-icon.svg" alt="{{ skill }}">
-                <p class="font-robotomono">{{ capitalizeFirstLetter(skill) }}</p>
+                <p i18n class="font-robotomono">{{ capitalizeFirstLetter(skill) }}</p>
             </div>
             }
             <div class="icon-container">
@@ -14,13 +14,13 @@
             </div>
             <div id="questionmark-container">
                 <img src="./assets/img/icons/questionmark-icon.svg" alt="material design">
-                <p class="font-robotomono challenge">Challenge <br> Me</p>
+                <p i18n class="font-robotomono challenge">Challenge <br> Me</p>
             </div>
-            <!-- <p class="font-robotomono challenge">Challenge <br> Me</p> -->
         </div>
         <img src="./assets/img/arrows/arrow-1.svg" class="mobile">
-        <p class="font-robotomono mobile">I am always happy to learn new technonogies,just tell me what you <br> need.
+        <p i18n class="font-robotomono mobile">I am always happy to learn new technonogies,just tell me what you <br>
+            need.
         </p>
-        <button class="font-robotomono mobile">Let's talk</button>
+        <button i18n class="font-robotomono mobile">Let's talk</button>
     </div>
 </section>

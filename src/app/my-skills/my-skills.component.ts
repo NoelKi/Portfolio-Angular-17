@@ -9,11 +9,12 @@ import { Component } from '@angular/core';
 })
 export class MySkillsComponent {
   skills = [
+    'python',
+    'matlab',
     'angular',
     'typescript',
     'javascript',
     'css',
-    'python',
     'html',
     'firebase',
     'github',

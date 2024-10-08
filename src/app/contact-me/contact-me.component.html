@@ -3,11 +3,11 @@
 
         <div class="container-bir">
             <h3 class="font-robotomono orange">Contact Me</h3>
-            <img src="assets/img/arrows/arrow-7.svg">
+            <img i18n-alt src="assets/img/arrows/arrow-7.svg" alt="arrow">
         </div>
         <div class="container-iki">
             <div class="container-uc">
-                <p class="font-robotomono turquoise text">Still not sure if I am the right person for your project?
+                <p i18n class="font-robotomono turquoise text">Still not sure if I am the right person for your project?
                     Contact
                     me so
                     I
@@ -18,11 +18,11 @@
             <div class="container-on">
                 <div class="container-dört">
                     <div class="container-yedi">
-                        <img [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
+                        <img i18n-alt [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
                         <h4 class="font-robotomono">kieran.noel&#64;icloud.com</h4>
                     </div>
                     <div class="container-yedi">
-                        <img [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
+                        <img i18n-alt [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
                         <h4 class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
             <div class="container-dokuz">
                 <div class="checkbox-container" (click)="togglePolicy()">
                     <img [src]="policyIconSource" alt="Checkbox" class="checkbox-icon">
-                    <p class="font-robotomono turquoise policy">
+                    <p i18n class="font-robotomono turquoise policy">
                         I've read the <a class="orange" href="#">privacy policy</a> and agree to
                         the processing of my data as outlined.
                     </p>

@@ -50,6 +50,9 @@ section {
     font-size: 18px;
     text-align: center;
   }
+  > img {
+    height: 45px;
+  }
 }
 
 #questionmark-container {
@@ -65,11 +68,15 @@ section {
 
 @media (min-width: $media-bp) {
   section {
+    padding-bottom: 100px;
     > div {
       align-items: flex-start;
+      padding: 0 78px;
       > div {
-        width: 80vw;
-        justify-content: center;
+        gap: 120px;
+        width: 100%;
+        justify-content: flex-start;
+        height: max-content;
       }
     }
   }
@@ -94,6 +101,9 @@ section {
     height: 80px;
     > p {
       display: block;
+    }
+    > img {
+      height: 58px;
     }
   }
 }
