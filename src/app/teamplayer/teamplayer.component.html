@@ -1,12 +1,17 @@
 <section>
-    <h3 class="font-robotomono orange">Need a teamplayer ?</h3>
-    <div>
-        <h4 class="font-robotomono orange">Need a teamplayer ?</h4>
-        <h4 class="font-robotomono orange">Here what my colleagues said about me</h4>
-    </div>
-    <div class="content">
-        @for (evaluation of evaluations; track $index) {
-        <app-teamplayer-macro [evaluation]="evaluation"></app-teamplayer-macro>
-        }
+    <div class="wrap">
+        <h3 class="font-robotomono orange big-headline">Need a teamplayer ?</h3>
+        <div class="container">
+            <h4 class="font-robotomono orange no-wrap small-headline">Need a teamplayer? &ensp; </h4>
+            <h4 class="font-robotomono orange no-wrap">Here what my colleagues said about me</h4>
+        </div>
+        <div class="content">
+            <div class="arrow-container">
+                <img src="assets/img/arrows/arrow-6.svg">
+            </div>
+            @for (evaluation of evaluations; track $index) { <app-teamplayer-macro
+                [evaluation]="evaluation"></app-teamplayer-macro>
+            }
+        </div>
     </div>
 </section>

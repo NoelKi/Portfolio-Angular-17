@@ -22,3 +22,27 @@ p {
   font-size: 16px;
   padding-bottom: 10px;
 }
+
+@media (min-width: 1200px) {
+  div {
+    border: none;
+    align-items: flex-start;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .project {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 16px;
+  }
+}
