@@ -4,6 +4,7 @@
 section {
   @include dFlex($fd: column);
   padding-bottom: 40px;
+  height: 200px;
 }
 
 h2 {
@@ -18,5 +19,82 @@ p {
 
 a {
   text-decoration: none;
-  padding-top: 20px;
+  @include dFlex();
+}
+
+.container-ichi {
+  @include dFlex($fd: column);
+  height: 100%;
+}
+
+.container-ni {
+  @include dFlex($fd: column, $g: 20px);
+}
+
+.container-san {
+  height: 100%;
+  @include dFlex($g: 10px, $ai: flex-start);
+  display: none;
+  > a {
+    height: 130px;
+  }
+}
+
+.container-yon {
+  height: 100%;
+  @include dFlex($fd: column);
+  > p {
+    display: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  section {
+    padding: 0;
+    max-width: 1440px;
+    padding: 0 78px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding: 0;
+  }
+
+  .container-san {
+    display: none;
+  }
+
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container-yon {
+    justify-content: flex-start;
+    width: 300px;
+    > p {
+      display: flex;
+      font-size: 12px;
+    }
+  }
+
+  .container-ichi {
+    width: 400px;
+    > p {
+      font-size: 23px;
+      text-align: center;
+    }
+  }
+
+  .container-san {
+    display: flex;
+    width: 300px;
+    color: transparent;
+  }
+
+  .container-ni {
+    flex-direction: row;
+    font-size: 14px;
+  }
 }
