@@ -2,12 +2,18 @@
 @import "./../../_mixins.scss";
 
 section {
-  text-align: center;
+  width: 100vw;
+  @include dFlex();
+}
+
+.wrap {
   @include dFlex($fd: column, $g: 20px);
+  text-align: center;
 }
 
 form {
   @include dFlex($fd: column, $g: 10px);
+  // width: max-content;
 }
 
 .arrow {
@@ -16,6 +22,12 @@ form {
   height: 70px;
   position: relative;
   padding-left: 70vw;
+}
+
+.arrow-desktop {
+  @include dFlex();
+  width: 50px;
+  height: 70px;
 }
 
 input[type="text"],
@@ -69,7 +81,8 @@ textarea {
   background-color: transparent;
   font-size: 16px;
   padding: 10px;
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
+  height: 120px;
   resize: vertical;
   width: 80vw;
   &::placeholder {
@@ -87,4 +100,138 @@ textarea {
 
 .checkbox-container {
   @include dFlex($g: 8px);
+}
+
+.container-bir {
+  @include dFlex();
+  > img {
+    display: none;
+  }
+}
+
+.container-iki {
+  @include dFlex();
+}
+
+.container-uc {
+  max-width: 600px;
+}
+
+.container-on {
+  display: none;
+}
+
+.container-bes {
+}
+
+.container-alti {
+  @include dFlex($fd: column);
+}
+
+.container-yedi {
+  display: none;
+  @include dFlex($jc: flex-start);
+  > img {
+    padding-right: 10px;
+  }
+}
+
+.container-sekiz {
+  display: block;
+}
+
+.container-dokuz {
+}
+
+.mobile {
+  display: flex;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .wrap {
+    align-items: flex-start;
+    width: 80vw;
+    max-width: 1440px;
+    padding: 0 78px;
+  }
+
+  form {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .container-bir {
+    > img {
+      display: block;
+    }
+  }
+
+  .container-dokuz {
+    @include dFlex($jc: space-between);
+    width: 100%;
+  }
+
+  .container-sekiz {
+    display: none;
+  }
+
+  .container-on {
+    @include dFlex($jc: space-between);
+    flex: 1;
+  }
+
+  .container-dört {
+    @include dFlex($fd: column, $ai: flex-start, $g: 10px);
+  }
+
+  .container-alti {
+    @include dFlex($fd: column, $g: 30px);
+    width: max-content;
+    padding-right: 30px;
+  }
+
+  .container-bes {
+    @include dFlex($fd: row, $jc: space-between);
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 478px;
+    height: 34px;
+  }
+
+  textarea {
+    flex-grow: 1;
+  }
+
+  .container-uc {
+    width: 507px;
+  }
+
+  .container-iki {
+    @include dFlex($fd: row, $g: 20px, $jc: flex-start);
+    width: 100%;
+  }
+
+  .text {
+    text-align: left;
+    width: 500px;
+  }
 }
