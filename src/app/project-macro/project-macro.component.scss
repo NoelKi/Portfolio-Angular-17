@@ -26,12 +26,25 @@ a {
 .github {
   color: $color-orange;
   border: 1px solid $color-turquoise;
+  &:hover {
+    color: $color-turquoise;
+  }
+  &:active {
+    color: $color-orange;
+    border-color: $color-orange;
+  }
 }
 
 .sitelink {
   color: black;
   background-color: $color-turquoise;
   white-space: nowrap;
+  &:hover {
+    color: $color-orange;
+  }
+  &:active {
+    font-weight: 700;
+  }
 }
 
 img {
