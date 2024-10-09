@@ -9,7 +9,6 @@ p {
   color: $color-turquoise;
   font-weight: 400;
   text-align: center;
-  // padding-left: 25px;
 }
 
 .section {
@@ -27,6 +26,9 @@ button {
   padding: 10px 20px;
   &:hover {
     color: $color-orange;
+  }
+  &:active {
+    font-weight: 700;
   }
 }
 

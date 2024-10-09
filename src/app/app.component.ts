@@ -23,5 +23,5 @@ import { FooterComponent } from './core/components/footer/footer.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'portfolioAngular17';
+  title = 'portfolio';
 }

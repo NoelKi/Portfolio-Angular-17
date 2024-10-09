@@ -1,10 +1,10 @@
 <div [class.opposite]="!isEven()">
-    <img class="desktop" src="./assets/img/projects/{{ project.img }}.svg">
+    <img i18n-alt class="desktop" src="./assets/img/projects/{{ project.img }}.svg" alt="project-demo">
     <div [class.righted]="!isEven()">
         <h3 class="font-robotomono">{{ project.name }}</h3>
         <p class="languages font-robotomono turquoise">{{ project.languages }}</p>
         <p class="description font-robotomono turquoise">{{ project.description}} </p>
-        <img class="mobile" src="./assets/img/projects/{{ project.img }}.svg">
+        <img i18n-alt class="mobile" src="./assets/img/projects/{{ project.img }}.svg" alt="project-demo">
         <div [class.jc]="!isEven()">
             <a href="{{ project.githubLink }}" class="github font-robotomono">Github</a>
             <a href="{{ project.websiteLink }}" class="sitelink font-robotomono">Live Test</a>

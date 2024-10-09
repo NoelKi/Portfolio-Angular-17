@@ -3,17 +3,17 @@
         <div class="container-one">
             <h2 class="font-handjet">&lt;KM&gt;</h2>
             <div class="header-left">
-                @for (link of ['Why me','Skills','Projects','Contact']; track $index) {
-                <a i18n="@@headerLinkOne{{i}}" class="font-robotomono no-wrap" href="#{{ link }}">{{ link }}</a>
+                @for (link of links; track $index) {
+                <a class="font-robotomono no-wrap" href="#{{ link }}">{{ link }}</a>
                 }
             </div>
         </div>
         <nav class="font-robotomono" [class.active]="menuOpen">
-            <img [src]="xIconSource" (mouseover)="xHover()" (mouseleave)="xDefault()" (click)="toggleMenu()"
+            <img i18n-alt [src]="xIconSource" (mouseover)="xHover()" (mouseleave)="xDefault()" (click)="toggleMenu()"
                 alt="close">
             <ul>
-                @for (link of ['Why me','Skills','Projects','Contact']; track $index) {
-                <li><a i18n="@@headerLinkTwo{{i}}" href="#{{ link }}" (click)="toggleMenu()">{{ link }}</a></li>
+                @for (link of links; track $index) {
+                <li><a href="#{{ link }}" (click)="toggleMenu()">{{ link }}</a></li>
                 }
                 <li>
                     <button class="language-media font-robotomono">DE</button> | <button
@@ -21,8 +21,8 @@
                 </li>
             </ul>
         </nav>
-        <img id="burger-menu" [src]="burgerIconSource" (mouseover)="burgerHover()" (mouseleave)="burgerDefault()"
-            (click)="toggleMenu()">
+        <img i18n-alt id="burger-menu" [src]="burgerIconSource" (mouseover)="burgerHover()"
+            (mouseleave)="burgerDefault()" (click)="toggleMenu()" alt="burger-menu">
 
         <div class="language-container">
             <button class="font-robotomono">DE</button>
