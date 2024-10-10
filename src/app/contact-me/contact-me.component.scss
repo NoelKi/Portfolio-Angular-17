@@ -1,14 +1,10 @@
 @import "./../../styles.scss";
 @import "./../../_mixins.scss";
 
-section {
-  width: 100vw;
-  @include dFlex();
-}
-
 .wrap {
   @include dFlex($fd: column, $g: 20px);
   text-align: center;
+  margin: 0 auto;
 }
 
 form {
@@ -121,11 +117,9 @@ textarea {
   display: none;
 }
 
-.container-bes {
-}
-
 .container-alti {
-  @include dFlex($fd: column);
+  @include dFlex($fd: column, $g: 16px);
+  padding-bottom: 16px;
 }
 
 .container-yedi {
@@ -136,11 +130,15 @@ textarea {
   }
 }
 
-.container-sekiz {
-  display: block;
+.container-dokuz {
+  width: 75vw;
+  > input {
+    margin-top: 10px;
+  }
 }
 
-.container-dokuz {
+.container-sekiz {
+  display: block;
 }
 
 .mobile {
@@ -151,10 +149,28 @@ textarea {
   display: none;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 600px) {
+  .container-dokuz {
+    width: 500px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 400px;
+  }
+
+  textarea {
+    width: 400px;
+  }
+
+  .container-dokuz {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1250px) {
   .wrap {
     align-items: flex-start;
-    width: 80vw;
     max-width: 1440px;
     padding: 0 78px;
   }
@@ -200,10 +216,11 @@ textarea {
     @include dFlex($fd: column, $g: 30px);
     width: max-content;
     padding-right: 30px;
+    padding-bottom: 0;
   }
 
   .container-bes {
-    @include dFlex($fd: row, $jc: space-between);
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
     width: 100%;
   }
 

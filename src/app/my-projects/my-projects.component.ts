@@ -17,8 +17,8 @@ export class MyProjectsComponent {
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       languages: 'Angular | Typescript | HTML | CSS | Firebase',
-      githubLink: 'www.github.de',
-      websiteLink: 'www.google.de',
+      githubLink: 'https://github.com/NoelKi/Join-Dummy',
+      websiteLink: 'https://google.de',
     },
     {
       name: 'Sharkie',
@@ -26,8 +26,8 @@ export class MyProjectsComponent {
       description:
         'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       languages: 'Javascript | HTML | CSS',
-      githubLink: 'www.github.de',
-      websiteLink: 'www.google.de',
+      githubLink: 'https://github.com/NoelKi/Sharkie-Game',
+      websiteLink: 'https://google.de',
     },
   ];
 }

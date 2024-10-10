@@ -72,7 +72,7 @@ img {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .opposite {
     flex-direction: row-reverse;
   }
@@ -88,18 +88,19 @@ img {
   h3 {
     padding: 0;
   }
+
   .mobile {
     display: none;
   }
 
   .desktop {
     display: block;
-    width: 588px;
+    width: 500px;
   }
 
   div {
-    padding: 10px 78px;
     max-width: 1440px;
+    padding-bottom: 40px;
     @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
     > div {
       align-items: flex-start;
@@ -122,8 +123,8 @@ img {
   }
 }
 
-@media (min-width: 1332px) {
-  img {
-    width: calc(44vw - 78px - 78px);
+@media (min-width: 1300px) {
+  .desktop {
+    width: 588px;
   }
 }

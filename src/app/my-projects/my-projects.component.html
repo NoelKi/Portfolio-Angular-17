@@ -1,6 +1,6 @@
-<section>
+<div>
     <h2 i18n class="font-robotomono orange">My Projects</h2>
     @for (project of projects; track $index; let idx = $index, e = $even) {
     <app-project-macro [isEven]="e" [project]="project"></app-project-macro>
     }
-</section>
+</div>

@@ -1,88 +1,85 @@
-<section>
-    <div class="wrap">
-
-        <div class="container-bir">
-            <h3 class="font-robotomono orange">Contact Me</h3>
-            <img i18n-alt src="assets/img/arrows/arrow-7.svg" alt="arrow">
+<div class="wrap">
+    <div class="container-bir">
+        <h3 class="font-robotomono orange">Contact Me</h3>
+        <img i18n-alt src="assets/img/arrows/arrow-7.svg" alt="arrow">
+    </div>
+    <div class="container-iki">
+        <div class="container-uc">
+            <p i18n class="font-robotomono turquoise text">Still not sure if I am the right person for your project?
+                Contact
+                me so
+                I
+                can
+                reassure you.
+                Let us work together.</p>
         </div>
-        <div class="container-iki">
-            <div class="container-uc">
-                <p i18n class="font-robotomono turquoise text">Still not sure if I am the right person for your project?
-                    Contact
-                    me so
-                    I
-                    can
-                    reassure you.
-                    Let us work together.</p>
-            </div>
-            <div class="container-on">
-                <div class="container-dört">
-                    <div class="container-yedi">
-                        <img i18n-alt [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
-                        <h4 class="font-robotomono">kieran.noel&#64;icloud.com</h4>
-                    </div>
-                    <div class="container-yedi">
-                        <img i18n-alt [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
-                        <h4 class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
-                    </div>
-                </div>
-                <div></div>
-                <a class="arrow-desktop desktop" href="#above-the-fold">
-                    <img i18n-alt class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()"
-                        (mouseleave)="onMouseOut()">
+        <div class="container-on">
+            <div class="container-dört">
+                <a href="mailto:kieran.noel@icloud.com" class="container-yedi">
+                    <img i18n-alt [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
+                    <h4 class="font-robotomono">kieran.noel&#64;icloud.com</h4>
+                </a>
+                <a href="tel:+4915172428241" class="container-yedi">
+                    <img i18n-alt [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
+                    <h4 class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
                 </a>
             </div>
-        </div>
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
-            <div class="container-bes">
-                <div class="container-alti">
-
-                    <input [(ngModel)]="contactData.name" #name="ngModel" class="font-robotomono turquoise" type="text"
-                        name="name" id="text" required [ngClass]="{ 'placeholder-error': name.invalid && name.touched }"
-                        [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
-                        (ngModelChange)="setPolicyIconSource()">
-
-                    <input [(ngModel)]="contactData.email" #email="ngModel" class="font-robotomono turquoise"
-                        type="email" name="email" id="email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                        [ngClass]="{ 'placeholder-error': email.invalid && email.touched }"
-                        [placeholder]="email.invalid && email.touched ? 'Your Email is required' : 'Your Email'"
-                        (ngModelChange)="setPolicyIconSource()">
-                </div>
-
-                <textarea [(ngModel)]="contactData.message" #message="ngModel" class="font-robotomono turquoise"
-                    name="message" id="message-input" required minlength="4"
-                    [ngClass]="{ 'placeholder-error': message.invalid && message.touched }"
-                    [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'"
-                    (ngModelChange)="setPolicyIconSource()"></textarea>
-            </div>
-            <div class="container-dokuz">
-                <div class="checkbox-container" (click)="togglePolicy()">
-                    <img i18n-alt [src]="policyIconSource" alt="Checkbox" class="checkbox-icon">
-                    <p i18n class="font-robotomono turquoise policy">
-                        I've read the <a class="orange" href="#">privacy policy</a> and agree to
-                        the processing of my data as outlined.
-                    </p>
-                </div>
-                <input class="font-robotomono orange" type="submit" value="Send"
-                    [disabled]="contactForm.invalid || !acceptedPolicy">
-            </div>
-        </form>
-        <a class="arrow mobile" href="#above-the-fold">
-            <img i18n-alt class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()"
-                alt="arrow">
-        </a>
-        <div class="container-sekiz">
-            <img [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
-            <h4 i18n-alt class="font-robotomono">kieran.noel&#64;icloud.com</h4>
-        </div>
-        <div class="container-sekiz">
-            <img [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
-            <h4 i18n-alt class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
+            <div></div>
+            <a class="arrow-desktop desktop" href="#above-the-fold">
+                <img i18n-alt class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()"
+                    (mouseleave)="onMouseOut()">
+            </a>
         </div>
     </div>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
+        <div class="container-bes">
+            <div class="container-alti">
 
+                <input [(ngModel)]="contactData.name" #name="ngModel" class="font-robotomono turquoise" type="text"
+                    name="name" id="text" required [ngClass]="{ 'placeholder-error': name.invalid && name.touched }"
+                    [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
+                    (ngModelChange)="setPolicyIconSource()">
 
-</section>
+                <input [(ngModel)]="contactData.email" #email="ngModel" class="font-robotomono turquoise" type="email"
+                    name="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    [ngClass]="{ 'placeholder-error': email.invalid && email.touched }"
+                    [placeholder]="email.invalid && email.touched ? 'Your Email is required' : 'Your Email'"
+                    (ngModelChange)="setPolicyIconSource()">
+            </div>
+
+            <textarea [(ngModel)]="contactData.message" #message="ngModel" class="font-robotomono turquoise"
+                name="message" id="message-input" required minlength="4"
+                [ngClass]="{ 'placeholder-error': message.invalid && message.touched }"
+                [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'"
+                (ngModelChange)="setPolicyIconSource()"></textarea>
+        </div>
+        <div class="container-dokuz">
+            <div class="checkbox-container" (click)="togglePolicy()">
+                <img i18n-alt [src]="policyIconSource" alt="Checkbox" class="checkbox-icon">
+                <p i18n class="font-robotomono turquoise policy">
+                    I've read the <a class="orange" href="#">privacy policy</a> and agree to
+                    the processing of my data as outlined.
+                </p>
+            </div>
+            <input class="font-robotomono orange" type="submit" value="Send"
+                [disabled]="contactForm.invalid || !acceptedPolicy">
+        </div>
+    </form>
+    <a class="arrow mobile" href="#above-the-fold">
+        <img i18n-alt class="arrow-up" [src]="arrowUpIcon" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()"
+            alt="arrow">
+    </a>
+    <div class="container-sekiz">
+        <a href="mailto:kieran.noel@icloud.com">
+            <img [src]="'assets/img/icons/letter-default-icon.svg'" alt="letter">
+            <h4 i18n-alt class="font-robotomono">kieran.noel&#64;icloud.com</h4>
+        </a>
+    </div>
+    <div class="container-sekiz">
+        <a href="tel:+4915172428241">
+            <img [src]="'assets/img/icons/phone-default-icon.svg'" alt="phone">
+            <h4 i18n-alt class="font-robotomono">+49&nbsp;151&nbsp;72428241</h4>
+        </a>
+    </div>
+</div>

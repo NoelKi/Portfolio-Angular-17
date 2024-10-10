@@ -1,12 +1,15 @@
 @import "./../../styles.scss";
 @import "./../../_mixins.scss";
 
-section {
-  width: 100vw;
+div {
+  max-width: 1440px;
+  padding: 0 78px;
   @include dFlex($fd: column);
-  padding-bottom: 80px;
+  margin: 0 auto;
 }
 
-h2 {
-  padding-bottom: 30px;
+@media (max-width: 11000px) {
+  h2 {
+    padding-bottom: 20px;
+  }
 }

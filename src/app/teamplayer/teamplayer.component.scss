@@ -1,16 +1,23 @@
 @import "./../../styles.scss";
 @import "./../../mixins";
 
-section {
-  @include dFlex();
-  width: 100vw;
+.wrap {
+  @include dFlex($g: 20px, $fd: column, $ai: flex-start);
+  // padding: 0 78px;
   padding-bottom: 100px;
+  // max-width: 1440px;
+  margin: 0 auto;
 }
 
-.wrap {
-  @include dFlex($g: 20px, $fd: column);
-  padding-bottom: 100px;
-  width: 100vw;
+.top-container {
+  @include dFlex($fd: column);
+  width: 100%;
+}
+
+h3,
+h4 {
+  padding: 0 10px;
+  text-align: center;
 }
 
 .no-wrap {
@@ -30,7 +37,7 @@ section {
 }
 
 .big-headline {
-  display: block;
+  display: flex;
 }
 
 .small-headline {
@@ -42,6 +49,9 @@ section {
   height: 250px;
   @include dFlex($ai: flex-start);
   display: none;
+}
+
+@media (min-width: 1110px) {
 }
 
 @media (min-width: 1300px) {
@@ -70,8 +80,8 @@ section {
 
   .wrap {
     align-items: flex-start;
-    width: max-content;
     max-width: 1440px;
     padding: 0 78px;
+    margin: 0 auto;
   }
 }

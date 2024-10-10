@@ -31,7 +31,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">80,81</context>
+          <context context-type="linenumber">76,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3133625014055702024" datatype="html">
@@ -210,271 +210,271 @@
           <context context-type="linenumber">23,66</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3904869822728903560" datatype="html">
-        <source>Datenschutzhinweise</source>
+      <trans-unit id="287225950225565938" datatype="html">
+        <source>Private Policy Information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6828891228330188398" datatype="html">
-        <source>Verantwortlicher</source>
+      <trans-unit id="1477517873911974944" datatype="html">
+        <source>Person in charge</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3294830297134197522" datatype="html">
-        <source>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutz-Grundverordnung (DSGVO), ist:</source>
+      <trans-unit id="6958761661028838570" datatype="html">
+        <source>The controller within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2751538776343800353" datatype="html">
-        <source>Ihre Betroffenenrechte</source>
+      <trans-unit id="6107360961489427609" datatype="html">
+        <source>Your data subject rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7275949095006819304" datatype="html">
-        <source>Unter den angegebenen Kontaktdaten können Sie gemäß EU-Datenschutz-Grundverordnung (DSGVO) jederzeit folgende Rechte ausüben:</source>
+      <trans-unit id="1817692322926425497" datatype="html">
+        <source>In accordance with the EU General Data Protection Regulation (GDPR), you can use the contact details provided at any time to exercise the following rights:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4114695330886981157" datatype="html">
-        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
+      <trans-unit id="6971560048462633437" datatype="html">
+        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Information about your data stored by us and its processing (Art. 15 GDPR),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Correction of incorrect personal data (Art. 16 GDPR),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Erasure of your data stored by us (Art. 17 GDPR),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Restriction of data processing if we are not yet permitted to erase your data due to legal obligations (Art. 18 GDPR),<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Objection to the processing of your data by us (Art. 21 GDPR) and<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Data portability if you have consented to data processing or have concluded a contract with us (Art. 20 GDPR).<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">13,22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6530392716726887915" datatype="html">
-        <source>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</source>
+      <trans-unit id="2148091908337512457" datatype="html">
+        <source>If you have given us your consent, you can revoke it at any time with effect for the future.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1747342745881241102" datatype="html">
-        <source>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</source>
+      <trans-unit id="6016887443898353519" datatype="html">
+        <source>You can lodge a complaint with a supervisory authority at any time, e.g., with the competent authority in the federal state of your place of residence or with the authority responsible for us as the competent authority.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">23,25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1743058702076955609" datatype="html">
-        <source>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+      <trans-unit id="4666516100573732150" datatype="html">
+        <source>A list of supervisory authorities (for the non-public sector) with addresses can be found at <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
                 href=&quot;https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html&quot;&gt;"/>www.bfdi.bund.de<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">27,30</context>
+          <context context-type="linenumber">26,29</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3117059079349064819" datatype="html">
-        <source>Verarbeitungstätigkeiten</source>
+      <trans-unit id="5290805624521275331" datatype="html">
+        <source>Processing activities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4342840656892287617" datatype="html">
+        <source>A contact form is available on our website, which can be used for electronic communication. If a user makes use of this option, the data entered in the input mask will be transmitted to us and stored. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">30,31</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5527657653978130055" datatype="html">
-        <source>Auf unserer Website ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert.</source>
+      <trans-unit id="8917574896382895131" datatype="html">
+        <source>The following data is also stored at the time the message is sent:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1751750602115013508" datatype="html">
-        <source>Zum Zeitpunkt der Absendung der Nachricht werden zudem folgende Daten gespeichert:</source>
+      <trans-unit id="2910545445400543209" datatype="html">
+        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Date and time of the enquiry<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">34,35</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2015435785039026303" datatype="html">
-        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Datum und Uhrzeit der Anfrage<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
+      <trans-unit id="711368560923871610" datatype="html">
+        <source>You can contact us via the email addresses provided. In this case, the personal data transmitted with the email will be stored, including the date and time the email was sent, email address, IP addresses, and information about the servers involved in the email communication.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="615926291192225803" datatype="html">
-        <source>Eine Kontaktaufnahme ist über die bereitgestellten E-Mail-Adressen möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert. Hierzu zählen Datum und Uhrzeit des E-Mailversands, E-Mailadresse, IP-Adressen sowie Informationen zu den an der E-Mail-Kommunikation beteiligten Servern.</source>
+      <trans-unit id="2090930845788445885" datatype="html">
+        <source>You can contact us via the telephone numbers provided. In this case, we collect log data containing your telephone number and the duration of the call.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">38,42</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6697576882356161793" datatype="html">
-        <source>Sie können Sie über die bereitgestellten Telefonnummern Kontakt zu uns aufnehmen. Hierbei erheben wir Protokolldaten, die Ihre Telefonnummer und die Dauer des Gesprächs beinhalten.</source>
+      <trans-unit id="7240169644170218775" datatype="html">
+        <source>Regardless of the type of communication selected, we collect the content of your enquiry. Your data will be stored for the purpose of personalized communication with you.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">43,45</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2463357678829183722" datatype="html">
-        <source>Unabhängig von der gewählten Kommunikationsart erheben wir den Inhalt Ihrer Anfrage. Ihre Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert.</source>
+      <trans-unit id="5336346460786326025" datatype="html">
+        <source>Legal foundation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1059520774914208855" datatype="html">
-        <source>Rechtsgrundlage</source>
+      <trans-unit id="2862674016415958744" datatype="html">
+        <source>The data is processed on the basis of a legitimate interest (Art. 6 para. 1 lit. f GDPR).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">47,48</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8208927656736952766" datatype="html">
-        <source>Die Verarbeitung der Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).</source>
+      <trans-unit id="6353384633160722652" datatype="html">
+        <source>Our legitimate interest in processing your data is to enable an easy establishment of contact with you. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">48,49</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6885522912273656079" datatype="html">
-        <source>Unser berechtigtes Interesse an der Verarbeitung Ihrer Daten ist die Ermöglichung einer unkomplizierten Kontaktaufnahme.</source>
+      <trans-unit id="5131333882882976580" datatype="html">
+        <source>If you contact us to inquire about an offer, the data will be processed for the purpose of implementing pre-contractual measures (Art. 6 para. 1 lit. b GDPR).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="635145054705256987" datatype="html">
-        <source>Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO).</source>
+      <trans-unit id="8443568478896860043" datatype="html">
+        <source>Recipient</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">52,53</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9142894781713985397" datatype="html">
-        <source>Empfänger</source>
+      <trans-unit id="6371976466851608837" datatype="html">
+        <source>Recipients of the data may be technical service providers who act as processors for the operation and maintenance of our website.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8465740994245990589" datatype="html">
-        <source>Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.</source>
+      <trans-unit id="2912544399103247767" datatype="html">
+        <source>Storage duration</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">55,56</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4541545601273990095" datatype="html">
-        <source>Speicherdauer</source>
+      <trans-unit id="8371906762152252307" datatype="html">
+        <source>Data will be deleted no later than twelve months after the contact has been processed.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="747989903730902457" datatype="html">
-        <source>Daten werden spätestens zwölf Monate nach Bearbeitung der Kontaktaufnahme gelöscht.</source>
+      <trans-unit id="6270522890526411641" datatype="html">
+        <source>If there is a contractual relationship, we are subject to the statutory retention periods. These are generally 6 or 10 years for reasons of proper accounting and tax law requirements.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">58,59</context>
+          <context context-type="linenumber">58,60</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3467148296158057804" datatype="html">
-        <source>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen. Diese betragen grundsätzlich 6 oder 10 Jahre aus Gründen der ordnungsmäßigen Buchführung und steuerrechtlichen Anforderungen.</source>
+      <trans-unit id="5732694347980106888" datatype="html">
+        <source>Provision prescribed or required</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">59,62</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2464272672165229268" datatype="html">
-        <source>Bereitstellung vorgeschrieben oder erforderlich</source>
+      <trans-unit id="7019039757718158232" datatype="html">
+        <source>The provision of your personal data is voluntary. However, we can only process your enquiry if you provide us with the required data and the reason for the enquiry.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">62,63</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9137046655322567392" datatype="html">
-        <source>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns erforderlichen Daten und erforderlichen Daten und den Grund der Anfrage mitteilen.</source>
+      <trans-unit id="4631897459328393956" datatype="html">
+        <source>Objection</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">64,66</context>
+          <context context-type="linenumber">64,65</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5357321109357041107" datatype="html">
-        <source>Widerspruch</source>
+      <trans-unit id="9177530698860792021" datatype="html">
+        <source>Read the information about your right of objection according to Art. 21 GDPR below.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7015099958946602779" datatype="html">
+        <source>Information about your right of objection under Art. 21 GDPR</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2117396880980726717" datatype="html">
+        <source>Individual case-related right of objection</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">67,68</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4147215524836221004" datatype="html">
-        <source>Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.</source>
+      <trans-unit id="4136029634907689437" datatype="html">
+        <source>You have the right to object at any time, on grounds relating to your particular situation, to the processing of your personal data, which is carried out on the basis of Art. 6(1)(f) GDPR (data processing based on a balance of interests); this also applies to profiling based on these provisions in accordance with Art. 4(4) GDPR.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">68,69</context>
+          <context context-type="linenumber">68,71</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7289034688887197826" datatype="html">
-        <source>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</source>
+      <trans-unit id="1809090551425957386" datatype="html">
+        <source>If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing which override your interests, rights, and freedoms, or the processing is for the establishment, exercise, or defense of legal claims.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">69,70</context>
+          <context context-type="linenumber">72,74</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="399713730735510705" datatype="html">
-        <source>Einzelfallbezogenes Widerspruchsrecht</source>
+      <trans-unit id="673459822158771218" datatype="html">
+        <source>Recipient of an objection</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">70,71</context>
+          <context context-type="linenumber">75,76</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8821549487447661568" datatype="html">
-        <source>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.</source>
+      <trans-unit id="5170734020594095943" datatype="html">
+        <source>Changes to our Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">77,78</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3163902589047061756" datatype="html">
-        <source>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</source>
+      <trans-unit id="1907324007659031420" datatype="html">
+        <source>We reserve the right to amend this privacy policy to ensure it always complies with the current legal requirements or to implement changes to our services in the privacy policy, such as when introducing new services. Your renewed visit will then be subject to the new privacy policy.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">75,78</context>
+          <context context-type="linenumber">78,80</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8208685343723228232" datatype="html">
-        <source>Empfänger eines Widerspruchs</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">79,80</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7186658315215236878" datatype="html">
-        <source>Änderung unserer Datenschutzerklärung</source>
+      <trans-unit id="92721492084155681" datatype="html">
+        <source>Questions about data protection</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
           <context context-type="linenumber">81,82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1220289415839299369" datatype="html">
-        <source>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</source>
+      <trans-unit id="6199371540788237568" datatype="html">
+        <source>If you have any questions about data protection, please email us at the address mentioned above.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">82,85</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6713409223694406297" datatype="html">
-        <source>Fragen zum Datenschutz</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">86,87</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7932684528569736078" datatype="html">
-        <source>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an den oben genannten Verantwortlichen.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">87,88</context>
+          <context context-type="linenumber">82,83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7682273657615620563" datatype="html">
