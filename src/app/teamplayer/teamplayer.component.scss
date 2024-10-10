@@ -3,9 +3,7 @@
 
 .wrap {
   @include dFlex($g: 20px, $fd: column, $ai: flex-start);
-  // padding: 0 78px;
   padding-bottom: 100px;
-  // max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -83,5 +81,6 @@ h4 {
     max-width: 1440px;
     padding: 0 78px;
     margin: 0 auto;
+    padding-bottom: 100px;
   }
 }
