@@ -1,12 +1,14 @@
 <div class="above-the-fold">
     <div class="hero-container">
-        <img i18n-alt class="portrait" src="./../assets/img/portraits/self-2.png" alt="portrait">
+        <img i18n-alt class="portrait" src="assets/img/portraits/self-2.png" alt="portrait">
         <div class="name-container">
-            <button i18n class="font-robotomono">CONTACT ME</button>
+            <a class="font-robotomono btn" href="#{{ contactLink }}">
+                CONTACT ME
+            </a>
             <h2 i18n class="font-robotomono">FRONTEND DEVELOPER</h2>
             <h1 i18n class="font-robotomono">Kieran Noel Mai</h1>
         </div>
-        <a href="#Why%20me">
+        <a href="#{{ whyMeLink }}" class="arrow-link">
             <img i18n-title class="arrow" (mouseover)="arrowHover()" (mouseleave)="arrowDefault()"
                 [src]="arrowIconSource" alt="arrow">
         </a>

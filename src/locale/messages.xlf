@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="6492125855525209813" datatype="html">
         <source>portrait</source>
@@ -34,15 +34,22 @@
           <context context-type="linenumber">76,77</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="5669462994581337154" datatype="html">
+        <source>Contact Me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3133625014055702024" datatype="html">
         <source>arrow</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">5</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">72</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/components/header-simple/header-simple.component.html</context>
@@ -50,7 +57,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">13</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/why-me/why-me.component.html</context>
@@ -77,35 +84,35 @@
         <source>Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">10,13</context>
+          <context context-type="linenumber">8,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="950921470000864385" datatype="html">
         <source>letter</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4425959074279579115" datatype="html">
         <source>phone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="289341251890660084" datatype="html">
         <source>Checkbox</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4828836707668728450" datatype="html">
         <source> I&apos;ve read the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;orange&quot; href=&quot;#&quot;&gt;"/>privacy policy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and agree to the processing of my data as outlined. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7549407949750699150" datatype="html">
@@ -543,21 +550,42 @@
         <source>Need a teamplayer ?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.html</context>
-          <context context-type="linenumber">3,4</context>
+          <context context-type="linenumber">4,5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7337068089108575319" datatype="html">
         <source>Need a teamplayer?   </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5921253905984888059" datatype="html">
         <source>Here what my colleagues said about me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.html</context>
-          <context context-type="linenumber">6,7</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="evaluationDevidas" datatype="html">
+        <source>&apos;Kieran displayed a professional demeanour and was always available to answer questions or provide guidance on the course content. It was a pleasure to work with him.&apos;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="evaluationMarko" datatype="html">
+        <source>&apos;Despite the challenging circumstances, Kieran demonstrated an ability to remain calm and maintain project momentum.&apos;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="evaluationAmadeus" datatype="html">
+        <source>&apos;Kieran demonstrates a rapid understanding of new concepts and a high level of resilience. His ability to adopt a holistic perspective has made him a valuable contributor to our team.&apos;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/teamplayer/teamplayer.component.ts</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1461144811414709903" datatype="html">

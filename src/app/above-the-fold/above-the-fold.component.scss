@@ -10,7 +10,7 @@ h2 {
   font-size: 54px;
 }
 
-a {
+.arrow-link {
   @include dFlex();
   position: absolute;
   top: 50vh;
@@ -30,7 +30,8 @@ a {
   margin-bottom: 10px;
 }
 
-button {
+.btn {
+  text-decoration: none;
   display: block;
   background-color: transparent;
   border: 1px solid $color-turquoise;
@@ -38,8 +39,8 @@ button {
   color: $color-orange;
   font-size: 16px;
   width: 164px;
-  height: 60px;
-  margin-left: -50px;
+  min-height: 50px;
+  margin-left: -60px;
   margin-bottom: 180px;
   rotate: 270deg;
   @include dFlex();
