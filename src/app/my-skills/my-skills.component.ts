@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { links } from '../core/header.module';
 @Component({
   selector: 'app-my-skills',
   standalone: true,
@@ -20,6 +20,7 @@ export class MySkillsComponent {
     'github',
     'scrum',
   ];
+  contactLink = links[3];
 
   capitalizeFirstLetter(skill: string): string {
     return skill.charAt(0).toUpperCase() + skill.slice(1);

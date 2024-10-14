@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { links } from '../core/header.module';
 @Component({
   selector: 'app-why-me',
   standalone: true,
@@ -11,6 +11,8 @@ export class WhyMeComponent {
   locationIcon = './assets/img/icons/location-default-icon.svg';
   suitcaseIcon = './assets/img/icons/suitcase-default-icon.svg';
   computerIcon = './assets/img/icons/computer-default-icon.svg';
+  links = links;
+  contactLink = links[3];
 
   onMouseOver(icon: string): void {
     switch (icon) {
