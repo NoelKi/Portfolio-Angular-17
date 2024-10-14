@@ -2,7 +2,7 @@
 @import "./../../../src/mixins";
 
 section {
-  padding: 0 5vw;
+  width: 100vw;
   padding-top: 92px;
   color: $color-turquoise;
   text-align: center;
@@ -10,7 +10,10 @@ section {
 
 .imprint {
   text-align: center;
+  margin: 0 auto;
   font-size: 18px;
+  max-width: 1440px;
+  padding: 0px 20px;
 }
 
 ul,
