@@ -49,7 +49,7 @@
                 }
               ],
               "outputHashing": "all",
-              "sourceMap": true
+              "sourceMap": false
             },
             "development": {
               "optimization": false,
