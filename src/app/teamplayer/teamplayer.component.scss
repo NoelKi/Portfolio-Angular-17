@@ -26,6 +26,7 @@ h4 {
   width: 100vw;
   @include dFlex($jc: flex-start);
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 10px;
 }
 
@@ -50,11 +51,17 @@ h4 {
 }
 
 @media (min-width: 1110px) {
+  .content {
+    align-items: center;
+    width: 100vw;
+  }
 }
 
 @media (min-width: 1300px) {
   .content {
     width: max-content;
+    align-items: flex-start;
+    height: 333px;
   }
 }
 

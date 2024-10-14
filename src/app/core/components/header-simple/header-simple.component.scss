@@ -34,6 +34,7 @@ a {
   &:hover {
     color: $color-turquoise;
   }
+  cursor: pointer;
 }
 
 img {
@@ -69,6 +70,7 @@ button {
   &:hover {
     color: $color-turquoise;
   }
+  cursor: pointer;
 }
 
 #burger-menu {

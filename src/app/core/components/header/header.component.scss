@@ -69,6 +69,7 @@ nav {
 a {
   text-decoration: none;
   color: $color-orange;
+  cursor: pointer;
   &:hover {
     color: $color-turquoise;
   }
@@ -91,6 +92,7 @@ a {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   color: $color-orange;
   &:hover {
     color: $color-turquoise;

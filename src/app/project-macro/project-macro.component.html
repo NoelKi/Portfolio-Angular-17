@@ -6,8 +6,8 @@
         <p class="description font-robotomono turquoise">{{ project.description}} </p>
         <img i18n-alt class="mobile" src="./assets/img/projects/{{ project.img }}.svg" alt="project-demo">
         <div [class.jc]="!isEven()">
-            <a href="{{ project.githubLink }}" class="github font-robotomono">Github</a>
-            <a href="{{ project.websiteLink }}" class="sitelink font-robotomono">Live Test</a>
+            <a target="_blank" href="{{ project.githubLink }}" class="github font-robotomono">Github</a>
+            <a target="_blank" href="{{ project.websiteLink }}" class="sitelink font-robotomono">Live Test</a>
         </div>
     </div>
 </div>
