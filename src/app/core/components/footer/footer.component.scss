@@ -20,6 +20,10 @@ p {
 a {
   text-decoration: none;
   @include dFlex();
+  transition: 100ms;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .container-ichi {
