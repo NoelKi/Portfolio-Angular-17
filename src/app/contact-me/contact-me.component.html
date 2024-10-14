@@ -40,19 +40,28 @@
                     name="name" id="text" required [ngClass]="{ 'placeholder-error': name.invalid && name.touched }"
                     [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
                     (ngModelChange)="setPolicyIconSource()">
-
+                @if (!name.valid && name.touched) {
+                <span class="font-robotomono">Please enter a name</span>
+                }
                 <input [(ngModel)]="contactData.email" #email="ngModel" class="font-robotomono turquoise" type="email"
                     name="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                     [ngClass]="{ 'placeholder-error': email.invalid && email.touched }"
                     [placeholder]="email.invalid && email.touched ? 'Your Email is required' : 'Your Email'"
                     (ngModelChange)="setPolicyIconSource()">
+                @if (!email.valid && email.touched) {
+                <span class="font-robotomono">Please enter a email</span>
+                }
             </div>
-
-            <textarea [(ngModel)]="contactData.message" #message="ngModel" class="font-robotomono turquoise"
-                name="message" id="message-input" required minlength="4"
-                [ngClass]="{ 'placeholder-error': message.invalid && message.touched }"
-                [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'"
-                (ngModelChange)="setPolicyIconSource()"></textarea>
+            <div class="textarea-container">
+                <textarea [(ngModel)]="contactData.message" #message="ngModel" class="font-robotomono turquoise"
+                    name="message" id="message-input" required minlength="4"
+                    [ngClass]="{ 'placeholder-error': message.invalid && message.touched }"
+                    [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'"
+                    (ngModelChange)="setPolicyIconSource()"></textarea>
+                @if (!message.valid && message.touched) {
+                <span class="font-robotomono">Please enter a message</span>
+                }
+            </div>
         </div>
         <div class="container-dokuz">
             <div class="checkbox-container" (click)="togglePolicy()">

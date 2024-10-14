@@ -73,6 +73,11 @@ p {
   margin: 0;
 }
 
+span {
+  color: #f92103;
+  padding-left: 10px;
+}
+
 textarea {
   border: 1px solid $color-turquoise;
   background-color: transparent;
@@ -89,6 +94,10 @@ textarea {
     color: #f92103;
     font-size: 16px;
   }
+}
+
+.textarea-container {
+  @include dFlex($fd: column, $g: 16px, $ai: flex-start);
 }
 
 .policy {
@@ -119,7 +128,7 @@ textarea {
 }
 
 .container-alti {
-  @include dFlex($fd: column, $g: 16px);
+  @include dFlex($fd: column, $g: 16px, $ai: flex-start);
   padding-bottom: 16px;
 }
 
@@ -214,7 +223,7 @@ textarea {
   }
 
   .container-alti {
-    @include dFlex($fd: column, $g: 30px);
+    @include dFlex($fd: column, $g: 30px, $ai: flex-start);
     width: max-content;
     padding-right: 30px;
     padding-bottom: 0;
@@ -235,8 +244,12 @@ textarea {
     height: 34px;
   }
 
-  textarea {
+  .textarea-container {
     flex-grow: 1;
+  }
+
+  textarea {
+    width: calc(100% - 20px);
   }
 
   .container-uc {
