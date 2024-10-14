@@ -1,16 +1,16 @@
 <header>
-    <a routerLink="/">
+    <div class="wrap">
         <h2 class="font-handjet">&lt;KM&gt;</h2>
-    </a>
-    <a (click)="goBack()" class="img-container" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()"><img i18n-alt
-            [src]="arrowUpSource" alt="arrow"></a>
-    <div class="language-container">
-        <a href="/angular-projects/portfolio/de/LegalNotice">
-            <button class="font-robotomono">DE</button>
-        </a>
-        <p>|</p>
-        <a href="/angular-projects/portfolio/en/LegalNotice">
-            <button class="font-robotomono">EN</button>
-        </a>
+        <a (click)="goBack()" class="img-container" (mouseover)="onMouseOver()" (mouseleave)="onMouseOut()"><img
+                i18n-alt [src]="arrowUpSource" alt="arrow"></a>
+        <div class="language-container">
+            <a href="/de">
+                <button class="font-robotomono">DE</button>
+            </a>
+            <p>|</p>
+            <a href="/en">
+                <button class="font-robotomono">EN</button>
+            </a>
+        </div>
     </div>
 </header>

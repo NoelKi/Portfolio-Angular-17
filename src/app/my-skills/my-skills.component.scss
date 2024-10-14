@@ -16,7 +16,7 @@ section {
       justify-content: space-between;
       gap: 52px;
       width: 80vw;
-      height: 500px;
+      height: fit-content;
       > p {
         color: $color-turquoise;
         margin-left: -80px;
@@ -50,9 +50,18 @@ section {
   }
 }
 
+.hidden-info {
+  font-size: 18px;
+  color: $color-turquoise;
+  text-align: left;
+  font-weight: 400;
+  display: none;
+}
+
 .icon-container {
-  @include dFlex($fd: column, $jc: space-between);
-  height: auto;
+  @include dFlex($fd: column);
+  height: 100px;
+  width: 88px;
   > p {
     color: $color-turquoise;
     display: none;
@@ -73,6 +82,12 @@ section {
     text-align: left;
     padding-left: 10px;
   }
+
+  &:hover {
+    .hidden-info {
+      display: flex;
+    }
+  }
 }
 
 @media (min-width: $media-bp) {
@@ -82,7 +97,7 @@ section {
       align-items: flex-start;
       padding: 0 78px;
       > div {
-        gap: 120px;
+        gap: 137px;
         width: 100%;
         justify-content: flex-start;
         height: max-content;
@@ -113,6 +128,36 @@ section {
     }
     > img {
       height: 58px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  section {
+    > div {
+      > div {
+        gap: calc((100vw - 78px - 78px - 400px) / 5);
+      }
+    }
+  }
+}
+
+@media (min-width: 1435px) {
+  section {
+    > div {
+      > div {
+        gap: 10vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1580px) {
+  section {
+    > div {
+      > div {
+        gap: 173px;
+      }
     }
   }
 }

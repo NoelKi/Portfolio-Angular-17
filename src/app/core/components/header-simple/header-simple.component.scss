@@ -7,8 +7,13 @@ header {
   top: 0;
   width: 100vw;
   left: 0;
-  @include dFlex($jc: space-between);
   background-color: #0b042d;
+  @include dFlex();
+}
+
+.wrap {
+  width: 100%;
+  @include dFlex($jc: space-between);
 }
 
 h2 {
@@ -59,8 +64,7 @@ img {
   > p {
     font-size: 24px;
   }
-  position: absolute;
-  right: 40px;
+  padding-left: 40px;
 }
 
 button {
@@ -102,6 +106,7 @@ button {
 
   h2 {
     font-size: 48px;
+    padding: 0;
   }
 
   .language-container {
@@ -110,5 +115,13 @@ button {
 
   img {
     top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    padding: 0 78px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

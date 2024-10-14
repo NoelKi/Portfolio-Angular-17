@@ -103,6 +103,13 @@ button {
   display: block;
 }
 
+.fd-row {
+  @include dFlex($fd: row);
+  > p {
+    font-weight: 800;
+  }
+}
+
 .header-left {
   font-size: 22px;
   padding-left: 40px;
