@@ -26,8 +26,7 @@ export class ContactMeComponent {
   mailTest = true;
 
   post = {
-    endPoint:
-      'https://kieran-mai.developerakademie.net/angular-projects/sendMail.php',
+    endPoint: 'https://kieran-noel-mai.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
