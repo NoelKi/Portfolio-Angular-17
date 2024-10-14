@@ -27,6 +27,7 @@ a {
   border: 1px solid $color-turquoise;
   &:hover {
     color: $color-turquoise;
+    transition: color 0.3s ease;
   }
   &:active {
     color: $color-orange;
@@ -40,6 +41,7 @@ a {
   white-space: nowrap;
   &:hover {
     color: $color-orange;
+    transition: color 0.3s ease;
   }
   &:active {
     font-weight: 700;
