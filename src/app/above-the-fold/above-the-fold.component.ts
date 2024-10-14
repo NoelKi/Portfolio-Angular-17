@@ -10,8 +10,8 @@ import { links } from '../core/header.module';
 export class AboveTheFoldComponent {
   links = links;
 
-  contactLink = links[0];
-  whyMeLink = links[3];
+  contactLink = links[3];
+  whyMeLink = links[0];
 
   arrowIconSource = './assets/img/arrows/arrow-down-default.svg';
 
