@@ -1,0 +1,14 @@
+@import "./../../styles";
+@import "./../../mixins";
+
+div {
+  position: fixed;
+  top: 50%;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 100px;
+  background-color: $color-turquoise;
+  @include dFlex();
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

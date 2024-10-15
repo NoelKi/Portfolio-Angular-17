@@ -2,20 +2,25 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-
+import { MailStatusOverlayComponent } from '../mail-status-overlay/mail-status-overlay.component';
+import { flatMap } from 'rxjs';
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, MailStatusOverlayComponent],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
   acceptedPolicy = false;
   arrowUpIcon = './assets/img/arrows/arrow-up-default.svg';
+  phoneSource = 'assets/img/icons/phone-default-icon.svg';
+  mailSource = 'assets/img/icons/letter-default-icon.svg';
   policyIconSource = './assets/img/icons/empty-box-icon.svg'; // Default Icon
 
+  showMailStatusOverlay = false;
   http = inject(HttpClient);
+  notification = 'Mail Send Successfully';
 
   contactData = {
     name: '',
@@ -23,7 +28,7 @@ export class ContactMeComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://kieran-noel-mai.de/sendMail.php',
@@ -55,11 +60,11 @@ export class ContactMeComponent {
           },
           error: (error) => {
             console.error(error);
-            console.log('error!!');
+            this.showNotification('Mail was not send');
           },
           complete: () => {
             console.info('send post complete');
-            console.log('klappt ;=)');
+            this.showNotification('Mail Send Successfully');
           },
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
@@ -94,11 +99,35 @@ export class ContactMeComponent {
     }
   }
 
+  showNotification(mess: string) {
+    this.notification = mess;
+    this.showMailStatusOverlay = true;
+    setTimeout(() => {
+      this.showMailStatusOverlay = false;
+    }, 3000);
+  }
+
   onMouseOver(): void {
     this.arrowUpIcon = './assets/img/arrows/arrow-up-hover.svg';
   }
 
   onMouseOut(): void {
     this.arrowUpIcon = './assets/img/arrows/arrow-up-default.svg';
+  }
+
+  phoneDefault(): void {
+    this.phoneSource = 'assets/img/icons/phone-default-icon.svg';
+  }
+
+  phoneHover(): void {
+    this.phoneSource = 'assets/img/icons/phone-hover-icon.svg';
+  }
+
+  mailDefault(): void {
+    this.mailSource = 'assets/img/icons/letter-default-icon.svg';
+  }
+
+  mailHover(): void {
+    this.mailSource = 'assets/img/icons/letter-hover-icon.svg';
   }
 }

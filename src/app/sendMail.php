@@ -32,6 +32,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             mail($recipient, $subject, $message, implode("\r\n", $headers));
             break;
         default: //Reject any non POST or OPTIONS requests.
-            header("Allow: POST", true, 405);
+            header("Allow: POST", true, 200);
             exit;
     } 

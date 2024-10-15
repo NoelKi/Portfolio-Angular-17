@@ -52,10 +52,20 @@ section {
 
 .hidden-info {
   font-size: 18px;
-  color: $color-turquoise;
+  color: transparent;
   text-align: left;
   font-weight: 400;
+  transition: color 0.6s ease;
   display: none;
+}
+
+.hidden-container {
+  @include dFlex($fd: row, $g: 40px);
+  &:hover {
+    .hidden-info {
+      color: $color-turquoise;
+    }
+  }
 }
 
 .icon-container {
@@ -81,12 +91,6 @@ section {
     font-size: 18px;
     text-align: left;
     padding-left: 10px;
-  }
-
-  &:hover {
-    .hidden-info {
-      display: flex;
-    }
   }
 }
 
@@ -136,17 +140,21 @@ section {
   section {
     > div {
       > div {
-        gap: calc((100vw - 78px - 78px - 400px) / 5);
+        gap: 80px;
       }
     }
   }
+
+  .hidden-info {
+    display: block;
+  }
 }
 
-@media (min-width: 1435px) {
+@media (min-width: 1490px) {
   section {
     > div {
       > div {
-        gap: 10vw;
+        gap: 120px;
       }
     }
   }
@@ -156,7 +164,7 @@ section {
   section {
     > div {
       > div {
-        gap: 173px;
+        gap: 137px;
       }
     }
   }
