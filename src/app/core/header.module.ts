@@ -1,7 +1,19 @@
 const links = [
-  $localize`:@@whyMe:Why me`,
-  $localize`:@@skills:Skills`,
-  $localize`:@@projects:Projects`,
-  $localize`:@@contact:Contact`,
+  {
+    name: $localize`:@@whyMe:Why me`,
+    id: 'whyme',
+  },
+  {
+    name: $localize`:@@skills:Skills`,
+    id: 'skills',
+  },
+  {
+    name: $localize`:@@projects:Projects`,
+    id: 'projects',
+  },
+  {
+    name: $localize`:@@contact:Contact`,
+    id: 'contact',
+  },
 ];
 export { links };

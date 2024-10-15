@@ -13,7 +13,7 @@ p {
 
 .section {
   width: 100vw;
-  padding-bottom: 280px;
+  padding-bottom: 20px;
   @include dFlex();
 }
 
@@ -149,6 +149,7 @@ button {
   }
 
   .wrap {
+    align-items: flex-end;
     justify-content: center;
     flex-direction: column-reverse;
   }
@@ -158,6 +159,7 @@ button {
   .wrap {
     width: 100vw;
     padding: 0;
+    align-items: center;
   }
 
   .iam {

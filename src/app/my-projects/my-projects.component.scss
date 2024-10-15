@@ -6,7 +6,10 @@ div {
   padding: 0 78px;
   @include dFlex($fd: column);
   margin: 0 auto;
-  padding-bottom: 20px;
+  // padding-bottom: 80px;
+  > h2 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1100px) {

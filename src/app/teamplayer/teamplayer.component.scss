@@ -3,7 +3,7 @@
 
 .wrap {
   @include dFlex($g: 20px, $fd: column, $ai: flex-start);
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
   margin: 0 auto;
 }
 

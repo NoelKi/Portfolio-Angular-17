@@ -4,7 +4,7 @@
             <h2 class="font-handjet">&lt;KM&gt;</h2>
             <div class="header-left">
                 @for (link of links; track $index) {
-                <a class="font-robotomono no-wrap" href="#{{ link }}">{{ link }}</a>
+                <a class="font-robotomono no-wrap" href="#{{ link.id }}">{{ link.name }}</a>
                 }
             </div>
         </div>
@@ -13,7 +13,7 @@
                 alt="close">
             <ul>
                 @for (link of links; track $index) {
-                <li><a href="#{{ link }}" (click)="toggleMenu()">{{ link }}</a></li>
+                <li><a href="#{{ link.id }}" (click)="toggleMenu()">{{ link.name }}</a></li>
                 }
                 <li class="fd-row">
                     <a href="/de">

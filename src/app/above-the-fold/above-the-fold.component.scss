@@ -28,6 +28,7 @@ h2 {
   width: 100vw;
   @include dFlex();
   margin-bottom: 10px;
+  margin-top: -100px;
 }
 
 .btn {
@@ -113,14 +114,6 @@ h2 {
   .portrait {
     width: 500px;
   }
-
-  // h1 {
-  //   font-size: 40px;
-  // }
-
-  // h2 {
-  //   font-size: 24px;
-  // }
 
   .btn {
     display: none;

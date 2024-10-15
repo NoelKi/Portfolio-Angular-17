@@ -37,22 +37,26 @@
 
         <div class="container-bes">
             <div class="container-alti">
-
-                <input [(ngModel)]="contactData.name" #name="ngModel" class="font-robotomono turquoise" type="text"
-                    name="name" id="text" required [ngClass]="{ 'placeholder-error': name.invalid && name.touched }"
-                    [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
-                    (ngModelChange)="setPolicyIconSource()">
-                @if (!name.valid && name.touched) {
-                <span class="font-robotomono">Please enter a name</span>
-                }
-                <input [(ngModel)]="contactData.email" #email="ngModel" class="font-robotomono turquoise" type="email"
-                    name="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                    [ngClass]="{ 'placeholder-error': email.invalid && email.touched }"
-                    [placeholder]="email.invalid && email.touched ? 'Your Email is required' : 'Your Email'"
-                    (ngModelChange)="setPolicyIconSource()">
-                @if (!email.valid && email.touched) {
-                <span class="font-robotomono">Please enter a valid email</span>
-                }
+                <div class="container-one">
+                    <input [(ngModel)]="contactData.name" #name="ngModel" class="font-robotomono turquoise" type="text"
+                        name="name" id="text" required [ngClass]="{ 'placeholder-error': name.invalid && name.touched }"
+                        [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
+                        (ngModelChange)="setPolicyIconSource()">
+                    @if (!name.valid && name.touched) {
+                    <span class="font-robotomono">Please enter a name</span>
+                    }
+                </div>
+                <div class="container-one">
+                    <input [(ngModel)]="contactData.email" #email="ngModel" class="font-robotomono turquoise"
+                        type="email" name="email" id="email" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        [ngClass]="{ 'placeholder-error': email.invalid && email.touched }"
+                        [placeholder]="email.invalid && email.touched ? 'Your Email is required' : 'Your Email'"
+                        (ngModelChange)="setPolicyIconSource()">
+                    @if (!email.valid && email.touched) {
+                    <span class="font-robotomono">Please enter a valid email</span>
+                    }
+                </div>
             </div>
             <div class="textarea-container">
                 <textarea [(ngModel)]="contactData.message" #message="ngModel" class="font-robotomono turquoise"

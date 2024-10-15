@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { MailStatusOverlayComponent } from '../mail-status-overlay/mail-status-overlay.component';
-import { flatMap } from 'rxjs';
+
 @Component({
   selector: 'app-contact-me',
   standalone: true,
